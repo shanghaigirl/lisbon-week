@@ -1,0 +1,428 @@
+<!doctype html>
+<html lang="zh">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="里斯本到拉各斯 27 天行程">
+<meta name="robots" content="noindex">
+<title>里斯本到拉各斯</title>
+
+<style>*,*::before,*::after{box-sizing:border-box}body{margin:0;padding:0}img{max-width:100%}</style>
+</head>
+<body>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Karla:wght@400;500;600;700&family=Noto+Serif+SC:wght@400;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap">
+
+<style>
+  :root {
+    --paper:    #F7F6F2;
+    --surface:  #FFFFFF;
+    --surface-2:#EFEFE9;
+    --ink:      #1B2430;
+    --ink-soft: #3E4A59;
+    --muted:    #6C7787;
+    --line:     #E1E1DA;
+    --line-soft:#ECECE5;
+    --azul:     #2A4E8F;
+    --azul-ink: #2A4E8F;
+    --azul-wash:#E6ECF7;
+    --ochre:    #96621A;
+    --ochre-wash:#F6EDDD;
+    --moss:     #3C6A4D;
+    --moss-wash:#E4EEE6;
+    --measure: 42em;
+    color-scheme: light;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --paper:    #12161C;
+      --surface:  #1A2028;
+      --surface-2:#222A34;
+      --ink:      #E9ECF1;
+      --ink-soft: #C3CAD4;
+      --muted:    #929CAA;
+      --line:     #2C3542;
+      --line-soft:#232B35;
+      --azul:     #8AB0EC;
+      --azul-ink: #A2C2F2;
+      --azul-wash:#1B2635;
+      --ochre:    #D7A85C;
+      --ochre-wash:#2B2317;
+      --moss:     #85B394;
+      --moss-wash:#1A2820;
+      color-scheme: dark;
+    }
+  }
+  :root[data-theme="dark"] {
+    --paper:    #12161C;
+    --surface:  #1A2028;
+    --surface-2:#222A34;
+    --ink:      #E9ECF1;
+    --ink-soft: #C3CAD4;
+    --muted:    #929CAA;
+    --line:     #2C3542;
+    --line-soft:#232B35;
+    --azul:     #8AB0EC;
+    --azul-ink: #A2C2F2;
+    --azul-wash:#1B2635;
+    --ochre:    #D7A85C;
+    --ochre-wash:#2B2317;
+    --moss:     #85B394;
+    --moss-wash:#1A2820;
+    color-scheme: dark;
+  }
+
+  body {
+    background: var(--paper);
+    color: var(--ink);
+    font-family: Karla, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", ui-sans-serif, system-ui, sans-serif;
+    font-size: 15.5px;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+  }
+  .wrap { max-width: 920px; margin: 0 auto; padding-inline: 20px; padding-block: 40px 72px; display: flex; flex-direction: column; gap: 46px; }
+
+  h1, h2, h3 { margin: 0; text-wrap: balance; }
+  h1 { font-family: "Instrument Serif", "Noto Serif SC", Georgia, serif; font-weight: 400; font-size: clamp(40px, 8vw, 68px); line-height: 1; letter-spacing: -.01em; }
+  h2 { font-family: "Instrument Serif", "Noto Serif SC", Georgia, serif; font-weight: 400; font-size: clamp(26px, 4vw, 34px); line-height: 1.15; }
+  h3 { font-size: 15px; font-weight: 700; letter-spacing: .01em; }
+  p { margin: 0; max-width: var(--measure); }
+  a { color: var(--azul-ink); }
+
+  .mono { font-family: "IBM Plex Mono", ui-monospace, monospace; font-variant-numeric: tabular-nums; }
+  .eyebrow { font-family: "IBM Plex Mono", ui-monospace, monospace; font-size: 11px; letter-spacing: .14em; text-transform: uppercase; color: var(--muted); }
+
+  /* masthead */
+  header.top { display: flex; flex-direction: column; gap: 16px; }
+  header.top .route { font-size: 17px; color: var(--ink-soft); max-width: 60ch; }
+  .facts { display: flex; flex-wrap: wrap; gap: 14px 30px; border-top: 1px solid var(--line); padding-top: 16px; }
+  .fact { display: flex; flex-direction: column; gap: 2px; }
+  .fact .k { font-family: "IBM Plex Mono", monospace; font-size: 10.5px; letter-spacing: .12em; text-transform: uppercase; color: var(--muted); }
+  .fact .v { font-size: 15px; font-weight: 600; font-variant-numeric: tabular-nums; }
+
+  section { display: flex; flex-direction: column; gap: 18px; }
+  .sec-head { display: flex; flex-direction: column; gap: 5px; }
+  .sec-head p { color: var(--muted); font-size: 14.5px; }
+
+  /* tables */
+  .tw { overflow-x: auto; border: 1px solid var(--line); border-radius: 2px; background: var(--surface); }
+  table { border-collapse: collapse; width: 100%; min-width: 560px; font-size: 14px; }
+  thead th { text-align: left; padding: 10px 14px; font-family: "IBM Plex Mono", monospace; font-size: 10px; letter-spacing: .11em; text-transform: uppercase; color: var(--muted); font-weight: 500; border-bottom: 1px solid var(--line); white-space: nowrap; }
+  tbody td { padding: 11px 14px; border-bottom: 1px solid var(--line-soft); vertical-align: top; }
+  tbody tr:last-child td { border-bottom: none; }
+  td.t { font-family: "IBM Plex Mono", monospace; font-variant-numeric: tabular-nums; white-space: nowrap; }
+  td strong { font-weight: 700; }
+  .sub { color: var(--muted); font-size: 12.5px; display: block; }
+
+  /* day rail */
+  .days { display: flex; flex-direction: column; }
+  .day { display: grid; grid-template-columns: 96px 1fr; gap: 0 22px; padding: 15px 0; border-top: 1px solid var(--line-soft); align-items: start; }
+  .day:first-child { border-top: 1px solid var(--line); }
+  .day .when { font-family: "IBM Plex Mono", monospace; font-variant-numeric: tabular-nums; font-size: 13px; color: var(--ink-soft); padding-top: 1px; }
+  .day .when b { display: block; font-size: 15px; font-weight: 600; color: var(--ink); }
+  .day .what { display: flex; flex-direction: column; gap: 7px; }
+  .day .what p { font-size: 14.8px; }
+  .tags { display: flex; flex-wrap: wrap; gap: 6px; }
+  .tag { font-family: "IBM Plex Mono", monospace; font-size: 10px; letter-spacing: .07em; text-transform: uppercase; padding: 2px 7px; border-radius: 2px; border: 1px solid; white-space: nowrap; }
+  .tag.free { color: var(--moss); border-color: color-mix(in srgb, var(--moss) 45%, transparent); background: var(--moss-wash); }
+  .tag.work { color: var(--muted); border-color: var(--line); background: var(--surface-2); }
+  .tag.drive { color: var(--ochre); border-color: color-mix(in srgb, var(--ochre) 45%, transparent); background: var(--ochre-wash); }
+  .tag.key { color: var(--azul); border-color: color-mix(in srgb, var(--azul) 45%, transparent); background: var(--azul-wash); }
+
+  /* leg banner */
+  .leg { display: flex; flex-direction: column; gap: 4px; padding: 14px 16px; background: var(--azul-wash); border-left: 3px solid var(--azul); border-radius: 2px; }
+  .leg .name { font-weight: 700; font-size: 16px; }
+  .leg .meta { font-family: "IBM Plex Mono", monospace; font-size: 12.5px; color: var(--ink-soft); }
+
+  .note { border-left: 3px solid var(--ochre); background: var(--ochre-wash); padding: 13px 16px; border-radius: 2px; display: flex; flex-direction: column; gap: 7px; }
+  .note p, .note li { font-size: 14.3px; color: var(--ink-soft); }
+  .note strong { color: var(--ink); }
+
+  ul { margin: 0; padding-left: 18px; display: flex; flex-direction: column; gap: 6px; }
+  li { font-size: 14.8px; max-width: var(--measure); }
+
+  .cols { display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 18px 26px; }
+  .block { display: flex; flex-direction: column; gap: 7px; }
+  .block h3 { color: var(--azul-ink); }
+
+  .todo { display: flex; flex-direction: column; }
+  .todo .item { display: grid; grid-template-columns: 18px 1fr; gap: 11px; padding: 10px 0; border-top: 1px solid var(--line-soft); align-items: start; }
+  .todo .item:first-child { border-top: none; }
+  .box { width: 13px; height: 13px; margin-top: 4px; border: 1.5px solid var(--muted); border-radius: 2px; }
+  .box.done { background: var(--moss); border-color: var(--moss); }
+  .todo .item.is-done span { color: var(--muted); text-decoration: line-through; text-decoration-thickness: 1px; }
+  .todo .item span { font-size: 14.5px; }
+
+  footer { border-top: 1px solid var(--line); padding-top: 18px; color: var(--muted); font-size: 13px; display: flex; flex-direction: column; gap: 5px; }
+
+
+  /* phone: stack tables into cards, no sideways scrolling */
+  @media (max-width: 680px) {
+    body { font-size: 16px; }
+    .wrap { padding-block: 28px 56px; gap: 38px; }
+    .tw { overflow-x: visible; border: none; background: transparent; }
+    table { min-width: 0; width: 100%; }
+    thead { display: none; }
+    tbody tr { display: flex; flex-direction: column; gap: 3px; padding: 14px 15px; background: var(--surface); border: 1px solid var(--line); border-radius: 2px; }
+    tbody tr + tr { margin-top: 10px; }
+    tbody td { display: block; padding: 0; border: none; font-size: 14.6px; }
+    tbody td:first-child { font-size: 16px; }
+    td.t { color: var(--azul-ink); font-size: 13px; font-weight: 600; order: -1; }
+    .day { grid-template-columns: 1fr; gap: 7px; padding: 16px 0; }
+    .day .when { font-size: 13px; color: var(--azul-ink); font-weight: 600; }
+    .day .when b { display: inline; font-size: 13px; color: var(--azul-ink); margin-right: 4px; }
+    .facts { gap: 12px 22px; }
+    .cols { gap: 24px; }
+    .note, .leg { padding: 14px 15px; }
+  }
+  @media print {
+    body { background: #fff; }
+    .wrap { padding-block: 0 0; gap: 30px; }
+    .day, .leg, .note, .tw { break-inside: avoid; }
+    section { break-inside: auto; }
+  }
+</style>
+
+<div class="wrap">
+
+  <header class="top">
+    <div class="eyebrow">Ciel &amp; Michael · Zeinab &amp; Iago 的婚礼</div>
+    <h1>里斯本到拉各斯</h1>
+    <p class="route">2026 年 9 月 19 日到 10 月 16 日，在葡萄牙 27 天。婚礼周在里斯本，采收季进杜罗河谷住三晚，波尔图四晚，阿尔加维海边十一晚，最后一晚回里斯本。前半程 Michael 全程休假，到拉各斯那段他才开始远程上班。<a href="https://claude.ai/artifact/Y4WcnqNWAi8i6Ko7HVpLPq">English version</a></p>
+    <div class="facts">
+      <div class="fact"><span class="k">在葡萄牙</span><span class="v">9/20 – 10/16</span></div>
+      <div class="fact"><span class="k">住几个地方</span><span class="v">5</span></div>
+      <div class="fact"><span class="k">航班</span><span class="v">3</span></div>
+      <div class="fact"><span class="k">时差</span><span class="v">比多伦多快 5 小时</span></div>
+      <div class="fact"><span class="k">婚礼</span><span class="v">9/26 周六</span></div>
+      <div class="fact"><span class="k">订票编号</span><span class="v mono">V3LZGB</span></div>
+    </div>
+  </header>
+
+  <section>
+    <div class="sec-head">
+      <h2>航班</h2>
+      <p>三班都在共享的 Google 日历里。时间是各自当地时间。</p>
+    </div>
+    <div class="tw">
+      <table>
+        <thead><tr><th>航班</th><th>日期</th><th>航线</th><th>时间</th></tr></thead>
+        <tbody>
+          <tr><td><strong>TS480</strong><span class="sub">Air Transat</span></td><td class="t">9/19 六</td><td>YYZ T3 → LIS T1<span class="sub">红眼，7 小时 05 分</span></td><td class="t">21:30 → 次日 09:35</td></tr>
+          <tr><td><strong>FR5486</strong><span class="sub">Ryanair</span></td><td class="t">10/4 日</td><td>OPO → FAO<span class="sub">1 小时 10 分 · 托运行李要另外买</span></td><td class="t">15:30 → 16:40</td></tr>
+          <tr><td><strong>TS481</strong><span class="sub">Air Transat</span></td><td class="t">10/16 五</td><td>LIS T1 → YYZ T3<span class="sub">8 小时 05 分</span></td><td class="t">11:35 → 14:40</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section>
+    <div class="sec-head">
+      <h2>住在哪里</h2>
+      <p>五处全部订好了。</p>
+    </div>
+    <div class="tw">
+      <table>
+        <thead><tr><th>段</th><th>日期</th><th>地址</th><th>备注</th></tr></thead>
+        <tbody>
+          <tr><td><strong>里斯本</strong><span class="sub">婚礼周</span></td><td class="t">9/20 – 9/27</td><td>Travessa de São Plácido 48<span class="sub">1200-845 Lisboa</span></td><td>市中心，走得到 Chiado 和 Príncipe Real</td></tr>
+          <tr><td><strong>杜罗河谷</strong><span class="sub">Pinhão 村里</span></td><td class="t">9/27 – 9/30</td><td>Rua António Manuel Saraiva 46<span class="sub">5085 Pinhão, Vila Real</span></td><td>住村子里，几家酒庄走路就到</td></tr>
+          <tr><td><strong>波尔图</strong><span class="sub">Bonfim</span></td><td class="t">9/30 – 10/4</td><td>Rua de Santos Pousada 719<span class="sub">4000-485 Porto</span></td><td>老城东边的本地街区</td></tr>
+          <tr><td><strong>拉各斯</strong><span class="sub">VistAzul</span></td><td class="t">10/4 – 10/15</td><td>Rua Ilha Terceira 13<span class="sub">8600-723 Lagos, Faro</span></td><td>3 楼没电梯 · 楼前免费路边停车 · 没空调，有风扇</td></tr>
+          <tr><td><strong>里斯本</strong><span class="sub">最后一晚</span></td><td class="t">10/15 – 10/16</td><td>Hotel White Lisboa<span class="sub">Avenida da República 9, 1050-185</span></td><td>Saldanha 地铁站对面，红线直达机场</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section>
+    <div class="sec-head">
+      <h2>每天的节奏是怎么定的</h2>
+      <p>三件事决定了这趟行程的节奏——主要是拉各斯那一段。</p>
+    </div>
+    <div class="cols">
+      <div class="block">
+        <h3>拉各斯之前是假期，拉各斯开始上班</h3>
+        <p>从落地到飞法鲁（9/20 – 10/4），Michael 全程休假——里斯本、杜罗、波尔图想怎么排就怎么排，不用赶在 14:00 前回来。<strong>10/5 起</strong>他远程上班：葡萄牙比多伦多快五小时，工作日 <strong>14:00–22:00</strong> 在线，所以拉各斯每个工作日早上 8 点到下午 2 点是自由的——这在海边本来就是一天里最好的一段，风还没起来。</p>
+      </div>
+      <div class="block">
+        <h3>拉各斯的日落只能放周末</h3>
+        <p>十月初日落大约 19:20，落在他的工作时段里。所以要看日落的地方——Ponta da Piedade、圣文森角——都排在 10/10、10/11 或 10/12。前半程没有这个限制，里斯本和波尔图的日落随时看。</p>
+      </div>
+      <div class="block">
+        <h3>只有一个司机</h3>
+        <p>只有 Michael 开车，开车的日子他不能喝。拉各斯的工作日晚饭要等他 22:00 下班，所以落脚点得走路就能吃上晚饭，正餐放在午饭，按当地的吃法点 <em>prato do dia</em>。前半程晚饭正常时间吃。</p>
+      </div>
+    </div>
+    <div class="note">
+      <p><strong>自由日一览：</strong>前半程 9/20 – 10/4 全是假期，天天自由（其中 9/23、9/25、9/26 有婚礼活动，9/27 和 9/30 要开车）。拉各斯段的完整自由日是 <strong>10/10 和 10/11</strong>，加上 <strong>10/12 加拿大感恩节</strong>（如果 Michael 放假）。10/16 回程那天他要请一天假。</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="sec-head">
+      <h2>婚礼</h2>
+      <p>在葡萄牙有三场。每一场会单独发邀请函，目前都还没公布具体时间。</p>
+    </div>
+    <div class="tw">
+      <table>
+        <thead><tr><th>日期</th><th>活动</th><th>地点</th><th>着装</th></tr></thead>
+        <tbody>
+          <tr><td class="t">9/23 三</td><td><strong>Pensão Amor Bar Night</strong><span class="sub">「一切开始的那家酒吧」</span></td><td>Pensão Amor，Pink Street，里斯本</td><td>—</td></tr>
+          <tr><td class="t">9/25 五</td><td><strong>Welcome Dinner</strong><span class="sub">「好吃的东西，和更好的人」</span></td><td>Quinta de Sant'Ana，Gradil</td><td><strong>Chic</strong>：大红大蓝，越鲜艳越好</td></tr>
+          <tr><td class="t">9/26 六</td><td><strong>婚礼正日</strong><span class="sub">含波斯 Sofreh Aghd 仪式</span></td><td>Quinta de Sant'Ana，Gradil</td><td><strong>Formal</strong>：大地色系，暖中性色、深绿、陶土色</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="note">
+      <p>场地距离里斯本约 <strong>30 分钟车程</strong>，停车位极少，新人建议所有人打 Uber 或 Bolt 过去。</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="sec-head"><h2>里斯本</h2></div>
+    <div class="leg">
+      <span class="name">婚礼周 · 7 晚</span>
+      <span class="meta">9/20 – 9/27 · Travessa de São Plácido 48</span>
+    </div>
+    <div class="days">
+      <div class="day"><div class="when"><b>9/20</b>周日</div><div class="what"><p>09:35 落地。入住，然后在 Chiado 一带随便逛逛。</p><div class="tags"><span class="tag free">自由日</span></div></div></div>
+      <div class="day"><div class="when"><b>9/21</b>周一</div><div class="what"><p><strong>市区环线。</strong>São Bento 上 28 路电车到 Alfama，看两个观景台、圣若热城堡和主教座堂，午饭后经 Praça do Comércio 走回 Chiado 和 Príncipe Real。周一修道院和贝伦塔都闭馆，所以 Belém 挪到周三。Ciel 18:30 有个短电话会，晚饭和 Michael 的朋友。</p><div class="tags"><span class="tag free">自由日</span></div></div></div>
+      <div class="day"><div class="when"><b>9/22</b>周二</div><div class="what"><p><strong>辛特拉。</strong>佩纳宫买早场票，赶在旅行团之前进去，然后雷加莱拉庄园。罗卡角放到 9/24 和 Cascais 一起。从 Rossio 站坐火车 40 分钟。</p><div class="tags"><span class="tag free">自由日</span><span class="tag key">要提前买票</span></div></div></div>
+      <div class="day"><div class="when"><b>9/23</b>周三</div><div class="what"><p>上午去 Belém：热罗尼莫斯修道院、贝伦塔，加蛋挞祖师店 Pastéis de Belém（MAAT 周三也开门）。回程在 <strong>LX Factory</strong> 下车吃午饭——旧工厂改的文创区，Ler Devagar 书店值得进。下午回来歇着。晚上 <strong>Pensão Amor 的 Bar Night</strong>——开始得晚，先慢慢吃个晚饭再过去正好。</p><div class="tags"><span class="tag key">婚礼活动</span></div></div></div>
+      <div class="day"><div class="when"><b>9/24</b>周四</div><div class="what"><p><strong>Cascais 一整天。</strong>沿海火车 40 分钟，海边步道走到 Boca do Inferno，吃海鲜午饭，下午打车或 403 路去<strong>罗卡角</strong>看欧洲大陆最西端——水很冷，是去散步和吃海鲜的，不是游泳的。</p><div class="tags"><span class="tag free">自由日</span></div></div></div>
+      <div class="day"><div class="when"><b>9/25</b>周五</div><div class="what"><p>白天没安排，想动的话去 <strong>Gulbenkian 美术馆和花园</strong>——城北的私人收藏馆，花园本身就值得去。晚上 <strong>Welcome Dinner</strong>，在 Quinta de Sant'Ana。</p><div class="tags"><span class="tag key">婚礼活动</span></div></div></div>
+      <div class="day"><div class="when"><b>9/26</b>周六</div><div class="what"><p><strong>婚礼正日。</strong></p><div class="tags"><span class="tag free">自由日</span><span class="tag key">婚礼活动</span></div></div></div>
+    </div>
+  </section>
+
+  <section>
+    <div class="sec-head"><h2>杜罗河谷</h2></div>
+    <div class="leg">
+      <span class="name">Pinhão 村里 · 3 晚 · 正值采收季</span>
+      <span class="meta">9/27 – 9/30 · Rua António Manuel Saraiva 46</span>
+    </div>
+    <div class="days">
+      <div class="day"><div class="when"><b>9/27</b>周日</div><div class="what"><p>从里斯本退房、取车、北上。开两小时到<strong>科英布拉</strong>吃午饭，看老大学和乔安娜图书馆，再经 Viseu 和 Lamego 开两个半到三小时。全程五到六小时。</p><div class="tags"><span class="tag drive">长途驾驶</span></div></div></div>
+      <div class="day"><div class="when"><b>9/28</b>周一</div><div class="what"><p><strong>步行酒庄环线。</strong>走 10 分钟到 Quinta do Bomfim，过桥到 Quinta das Carvalhas，在村里吃午饭，再沿河走 30 分钟到 Quinta da Roêda 踩葡萄。全天不开车，所以两个人都能喝。</p><div class="tags"><span class="tag key">要订 Bomfim + Roêda</span><span class="tag free">自由日</span></div></div></div>
+      <div class="day"><div class="when"><b>9/29</b>周二</div><div class="what"><p>一早先上 <strong>Casal de Loivos 观景台</strong>——开车 10 分钟，趁还没喝酒、司机清醒的时候去。然后在 Pinhão 码头坐 <strong>rabelo 船</strong>。下午不用赶回来，可以再找一家 quinta 坐着喝一杯。</p><div class="tags"><span class="tag free">自由日</span></div></div></div>
+      <div class="day"><div class="when"><b>9/30</b>周三</div><div class="what"><p>上午出发，路上停 <strong>São Leonardo de Galafura</strong> 观景台。到波尔图市区的门店还车，不是机场。</p><div class="tags"><span class="tag drive">开车</span></div></div></div>
+    </div>
+    <div class="note">
+      <p><strong>还有一件事要跟 Michael 定。</strong>9/27 是婚礼第二天，他要一个人开五到六小时，最后一段是下到河谷的盘山路。嫌累的话，可以把科英布拉缩成午饭加图书馆，或者干脆直奔 Pinhão，把车程压到四小时出头。</p>
+      <p>这一段能成立，关键是住在村子里而不是 Alijó 高原上。原先订的高原房源已于 9/18 取消。</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="sec-head"><h2>波尔图</h2></div>
+    <div class="leg">
+      <span class="name">Bonfim · 4 晚</span>
+      <span class="meta">9/30 – 10/4 · Rua de Santos Pousada 719</span>
+    </div>
+    <div class="days">
+      <div class="day"><div class="when"><b>9/30</b>周三</div><div class="what"><p>到了先还车、入住，傍晚沿 Ribeira 河边走走。</p></div></div>
+      <div class="day"><div class="when"><b>10/1</b>周四</div><div class="what"><p>São Bento 火车站看瓷砖画，然后 Lello 书店，下午接着逛 Clérigos 塔和老城。</p><div class="tags"><span class="tag key">Lello 要提前买票</span><span class="tag free">自由日</span></div></div></div>
+      <div class="day"><div class="when"><b>10/2</b>周五</div><div class="what"><p>过河去 Gaia，参观一家波特酒窖，顺便品酒。傍晚从 Gaia 那侧看老城日落，再走 Dom Luís 一世桥上层回来。</p><div class="tags"><span class="tag free">自由日</span></div></div></div>
+      <div class="day"><div class="when"><b>10/3</b>周六</div><div class="what"><p>想跑远一点就放今天：去 Foz 看海、在 Matosinhos 吃海鲜，或者一日游去吉马良斯或布拉加。</p><div class="tags"><span class="tag free">自由日</span></div></div></div>
+      <div class="day"><div class="when"><b>10/4</b>周日</div><div class="what"><p>上午轻松一点，13:00 前去机场，15:30 飞法鲁。</p><div class="tags"><span class="tag key">航班</span></div></div></div>
+    </div>
+  </section>
+
+  <section>
+    <div class="sec-head">
+      <h2>阿尔加维</h2>
+      <p>十一晚住在同一个地方，中间不用重新打包。<strong>从 10/5 起 Michael 开始上班</strong>：上午出门，下午办公，大景点全留给长周末。</p>
+    </div>
+    <div class="leg">
+      <span class="name">拉各斯 · 11 晚 · VistAzul</span>
+      <span class="meta">10/4 – 10/15 · Rua Ilha Terceira 13</span>
+    </div>
+    <div class="days">
+      <div class="day"><div class="when"><b>10/4</b>周日</div><div class="what"><p>16:40 落地法鲁，取车，开一小时到拉各斯。入住后走进老城吃晚饭——日落要到 19:20，天还亮着。</p><div class="tags"><span class="tag free">晚上自由</span></div></div></div>
+      <div class="day"><div class="when"><b>10/5</b>周一</div><div class="what"><p>走 <strong>Ponta da Piedade</strong> 悬崖上的木栈道，从上面俯瞰那些海蚀拱门，然后到 <strong>Praia do Camilo</strong> 游泳。离住处只有五分钟。</p><div class="tags"><span class="tag work">14:00 上班</span></div></div></div>
+      <div class="day"><div class="when"><b>10/6</b>周二</div><div class="what"><p>下到 Ponta da Piedade 下面的小码头，<strong>坐小船或划 kayak 进海蚀洞</strong>——上午海面最平。之后去 Praia Dona Ana。</p><div class="tags"><span class="tag work">14:00 上班</span></div></div></div>
+      <div class="day"><div class="when"><b>10/7</b>周三</div><div class="what"><p>往内陆开 40 分钟到 <strong>Silves</strong>：摩尔人的红砂岩城堡，和城堡下面的老城。</p><div class="tags"><span class="tag drive">短途开车</span><span class="tag work">14:00 上班</span></div></div></div>
+      <div class="day"><div class="when"><b>10/8</b>周四</div><div class="what"><p>在 <strong>Meia Praia</strong> 慢慢躺一上午，就是河对岸那条长沙滩。</p><div class="tags"><span class="tag work">14:00 上班</span></div></div></div>
+      <div class="day"><div class="when"><b>10/9</b>周五</div><div class="what"><p><strong>Monchique 山区。</strong>上山到阿尔加维最高点 Fóia，以及温泉小镇 Caldas de Monchique。单程 40 分钟。</p><div class="tags"><span class="tag drive">短途开车</span><span class="tag work">14:00 上班</span></div></div></div>
+      <div class="day"><div class="when"><b>10/10</b>周六</div><div class="what"><p><strong>拉各斯不开车的一天。</strong>上午走栈道，中午在老城吃 cataplana，下午泡在沙滩上，傍晚回 <strong>Ponta da Piedade 看日落</strong>，整片岩壁会变成橙红色。车钥匙一整天不动，Michael 想喝多少喝多少。</p><div class="tags"><span class="tag free">自由日</span><span class="tag key">日落</span></div></div></div>
+      <div class="day"><div class="when"><b>10/11</b>周日</div><div class="what"><p><strong>西海岸和欧洲的尽头。</strong>开 45 分钟到 Praia da Bordeira 走悬崖环线、看冲浪，在 Arrifana 吃海鲜午饭，下午逛萨格里什要塞，然后在<strong>圣文森角看日落</strong>，天黑后开一小时回来。那边水冷风大，是用来看的，不是游泳的。</p><div class="tags"><span class="tag free">自由日</span><span class="tag drive">大开车日 · 不能喝</span></div></div></div>
+      <div class="day"><div class="when"><b>10/12</b>周一</div><div class="what"><p><strong>东边的悬崖。</strong>上午从 Benagil 坐船看海蚀洞，然后走一段七个悬谷步道，从 Praia da Marinha 那头开始，中午在渔村 Ferragudo 吃饭。如果 Michael 那天要上班，就只做早班船加 Marinha 观景台，13:30 前回来。</p><div class="tags"><span class="tag free">感恩节，如果放假</span><span class="tag drive">单程 45 分钟</span></div></div></div>
+      <div class="day"><div class="when"><b>10/13</b>周二</div><div class="what"><p><strong>休息日。</strong>连着跑了三天，这天什么都不排。上午去 Praia Dona Ana 躺着。</p><div class="tags"><span class="tag work">14:00 上班</span></div></div></div>
+      <div class="day"><div class="when"><b>10/14</b>周三</div><div class="what"><p><strong>三个小渔村。</strong>开 15 分钟到 Praia da Luz，沿海岸步道翻过黑岩头走到 Burgau，再到 Salema 吃海鲜午饭。<strong>13:30 前在拉各斯还车</strong>，这样第二天就不用管车了。</p><div class="tags"><span class="tag drive">还车</span></div></div></div>
+      <div class="day"><div class="when"><b>10/15</b>周四</div><div class="what"><p>11:00 前退房，坐火车回里斯本。</p><div class="tags"><span class="tag key">火车</span></div></div></div>
+    </div>
+    <div class="note">
+      <p><strong>关于车：</strong>10/4 在法鲁机场取。一定要订<strong>自动挡</strong>——淡季也会订完——而且要加租车公司的<strong>电子收费标签</strong>，因为 A22 全程电子收费、没有收费亭，不加的话事后会被收罚款加手续费。</p>
+      <p><strong>天气：</strong>南岸 22–25℃，海水 20–21℃，有遮挡，能游泳。西海岸 Bordeira 和萨格里什那边又冷又大风，带件外套。</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="sec-head"><h2>回程</h2></div>
+    <div class="days">
+      <div class="day"><div class="when"><b>10/15</b>周四</div><div class="what">
+        <p><strong>拉各斯坐火车回里斯本，约四小时。</strong>带着行李叫 Bolt 去拉各斯火车站，先坐区域车到 Tunes，换 Intercidades，<strong>在 Entrecampos 下车</strong>，不要坐到 Oriente——从那里打车五分钟到酒店，或者坐地铁黄线两站到 Saldanha。</p>
+        <p>在 cp.pt 买票，终点选 <em>Lisboa - Entrecampos</em>。订早一点的车次，Michael 14:00 要开工。中午前后到，先把行李存在前台，房间没好就在咖啡馆顶一小时。</p>
+      </div></div>
+      <div class="day"><div class="when"><b>10/16</b>周五</div><div class="what">
+        <p><strong>08:15 从酒店出发。</strong>酒店对面 Saldanha 站坐地铁红线，不用换乘直达机场，20 到 25 分钟，终点就是 1 号航站楼。在站内自助机买 Viva Viagem 卡。打车 15 到 20 分钟，但周五早上是高峰，地铁时间更稳。</p>
+        <p>09:00 前到机场，TS481 11:35 起飞。</p>
+        <div class="tags"><span class="tag free">PTO</span></div>
+      </div></div>
+    </div>
+  </section>
+
+  <section>
+    <div class="sec-head">
+      <h2>还要订的东西</h2>
+      <p>住的全部搞定了。剩下的是交通、门票和几个要问清楚的问题。</p>
+    </div>
+    <div class="cols">
+      <div class="block">
+        <h3>这周</h3>
+        <div class="todo">
+          <div class="item"><span class="box"></span><span><strong>阿尔加维的租车</strong>——10/4 法鲁机场取，自动挡，加电子收费标签，10/14 在拉各斯还</span></div>
+          <div class="item"><span class="box"></span><span><strong>杜罗的租车</strong>——9/27 里斯本取，9/30 波尔图还，自动挡，比一下异地还车费</span></div>
+          <div class="item"><span class="box"></span><span>问 Michael：9/27 那段长途开车行不行、10/12 感恩节放不放假、10/16 回程那天的假请了没有</span></div>
+          <div class="item"><span class="box"></span><span>给 VistAzul 房东发消息：wifi 多快、餐桌够不够两台电脑、附近的学校下午吵不吵</span></div>
+          <div class="item is-done"><span class="box done"></span><span>杜罗改住 Pinhão 村里，Alijó 的房源已取消</span></div>
+        </div>
+      </div>
+      <div class="block">
+        <h3>出发前</h3>
+        <div class="todo">
+          <div class="item"><span class="box"></span><span><strong>Quinta do Bomfim 和 Quinta da Roêda</strong>——最先订，采收周会满。问 Roêda 我们那几天有没有踩葡萄</span></div>
+          <div class="item"><span class="box"></span><span>Pinhão 码头的 rabelo 船，以及村里的晚饭订位——餐厅只有几家</span></div>
+          <div class="item"><span class="box"></span><span>10/15 拉各斯到里斯本的火车票，订早班</span></div>
+          <div class="item"><span class="box"></span><span>佩纳宫早场票 · Lello 书店门票 · Ryanair 托运行李</span></div>
+          <div class="item"><span class="box"></span><span>Koodo 欧洲 30 天套餐 C$60 · 关掉中国号码的数据漫游</span></div>
+          <div class="item"><span class="box"></span><span>Ciel 付给 Michael <strong>C$400</strong>，拉各斯房费的分摊</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="sec-head"><h2>吃什么</h2></div>
+    <ul>
+      <li><strong>Cataplana</strong>——铜锅焖海鲜，两人份起点。拉各斯的招牌。</li>
+      <li><strong>Francesinha</strong>——到了波尔图吃一次，体验一下。</li>
+      <li><strong>章鱼</strong>——塔维拉旁边的 Santa Luzia，烤章鱼或者章鱼饭。</li>
+      <li><strong>烤沙丁鱼</strong>——季节的尾巴，十月初还吃得到。</li>
+      <li><strong>Medronho</strong>——野草莓树果子蒸的烈酒，饭后喝。</li>
+      <li><strong>杏仁、无花果、角豆做的甜点</strong>——阿尔加维的传统，摩尔人留下来的。</li>
+      <li><strong>Prato do dia</strong>——每天的午市套餐，便宜量大。拉各斯的工作日晚饭要等到 22:00，所以那段日子这顿是正餐。</li>
+    </ul>
+  </section>
+
+  <footer>
+    <div>更新于 2026 年 9 月 21 日：改正了 Michael 的工作安排——拉各斯之前（9/20 – 10/4）全程休假，拉各斯段才是工作日 14:00–22:00 上班。住宿和航班已确认，每日安排还是草案。</div>
+    <div>每个航班、住处和活动都已经加进共享的 Google 日历。</div>
+    <div><a href="https://claude.ai/artifact/Y4WcnqNWAi8i6Ko7HVpLPq">English version</a></div>
+  </footer>
+
+</div>
+</body>
+</html>

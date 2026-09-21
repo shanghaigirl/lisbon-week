@@ -1,0 +1,342 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="Lisbon wedding week Sep 20–27 itinerary">
+<meta name="robots" content="noindex">
+<title>This Week in Lisbon</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Karla:wght@400;500;600;700&family=Noto+Serif+SC:wght@400;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap">
+<style>*,*::before,*::after{box-sizing:border-box}body{margin:0;padding:0}img{max-width:100%}</style>
+</head>
+<body>
+<style>
+  :root {
+    --paper:    #F7F6F2;
+    --surface:  #FFFFFF;
+    --surface-2:#EFEFE9;
+    --ink:      #1B2430;
+    --ink-soft: #3E4A59;
+    --muted:    #6C7787;
+    --line:     #E1E1DA;
+    --line-soft:#ECECE5;
+    --azul:     #2A4E8F;
+    --azul-ink: #2A4E8F;
+    --azul-wash:#E6ECF7;
+    --ochre:    #96621A;
+    --ochre-wash:#F6EDDD;
+    --moss:     #3C6A4D;
+    --moss-wash:#E4EEE6;
+    --measure: 42em;
+    color-scheme: light;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --paper:    #12161C;
+      --surface:  #1A2028;
+      --surface-2:#222A34;
+      --ink:      #E9ECF1;
+      --ink-soft: #C3CAD4;
+      --muted:    #929CAA;
+      --line:     #2C3542;
+      --line-soft:#232B35;
+      --azul:     #8AB0EC;
+      --azul-ink: #A2C2F2;
+      --azul-wash:#1B2635;
+      --ochre:    #D7A85C;
+      --ochre-wash:#2B2317;
+      --moss:     #85B394;
+      --moss-wash:#1A2820;
+      color-scheme: dark;
+    }
+  }
+  :root[data-theme="dark"] {
+    --paper:    #12161C;
+    --surface:  #1A2028;
+    --surface-2:#222A34;
+    --ink:      #E9ECF1;
+    --ink-soft: #C3CAD4;
+    --muted:    #929CAA;
+    --line:     #2C3542;
+    --line-soft:#232B35;
+    --azul:     #8AB0EC;
+    --azul-ink: #A2C2F2;
+    --azul-wash:#1B2635;
+    --ochre:    #D7A85C;
+    --ochre-wash:#2B2317;
+    --moss:     #85B394;
+    --moss-wash:#1A2820;
+    color-scheme: dark;
+  }
+
+  body {
+    background: var(--paper);
+    color: var(--ink);
+    font-family: Karla, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", ui-sans-serif, system-ui, sans-serif;
+    font-size: 15.5px;
+    line-height: 1.65;
+    -webkit-font-smoothing: antialiased;
+  }
+  .wrap { max-width: 860px; margin: 0 auto; padding-inline: 20px; padding-block: 40px 72px; display: flex; flex-direction: column; gap: 44px; }
+
+  h1, h2, h3 { margin: 0; text-wrap: balance; }
+  h1 { font-family: "Instrument Serif", "Noto Serif SC", Georgia, serif; font-weight: 400; font-size: clamp(38px, 8vw, 62px); line-height: 1.05; letter-spacing: -.01em; }
+  h2 { font-family: "Instrument Serif", "Noto Serif SC", Georgia, serif; font-weight: 400; font-size: clamp(25px, 4vw, 32px); line-height: 1.15; }
+  h3 { font-size: 15px; font-weight: 700; letter-spacing: .01em; }
+  p { margin: 0; max-width: var(--measure); }
+  a { color: var(--azul-ink); }
+
+  .mono { font-family: "IBM Plex Mono", ui-monospace, monospace; font-variant-numeric: tabular-nums; }
+  .eyebrow { font-family: "IBM Plex Mono", ui-monospace, monospace; font-size: 11px; letter-spacing: .14em; text-transform: uppercase; color: var(--muted); }
+
+  header.top { display: flex; flex-direction: column; gap: 16px; }
+  header.top .route { font-size: 17px; color: var(--ink-soft); max-width: 60ch; }
+  .facts { display: flex; flex-wrap: wrap; gap: 14px 30px; border-top: 1px solid var(--line); padding-top: 16px; }
+  .fact { display: flex; flex-direction: column; gap: 2px; }
+  .fact .k { font-family: "IBM Plex Mono", monospace; font-size: 10.5px; letter-spacing: .12em; text-transform: uppercase; color: var(--muted); }
+  .fact .v { font-size: 15px; font-weight: 600; font-variant-numeric: tabular-nums; }
+
+  section { display: flex; flex-direction: column; gap: 18px; }
+  .sec-head { display: flex; flex-direction: column; gap: 5px; }
+  .sec-head p { color: var(--muted); font-size: 14.5px; }
+
+  .tw { overflow-x: auto; border: 1px solid var(--line); border-radius: 2px; background: var(--surface); }
+  table { border-collapse: collapse; width: 100%; min-width: 540px; font-size: 14px; }
+  thead th { text-align: left; padding: 10px 14px; font-family: "IBM Plex Mono", monospace; font-size: 10px; letter-spacing: .11em; text-transform: uppercase; color: var(--muted); font-weight: 500; border-bottom: 1px solid var(--line); white-space: nowrap; }
+  tbody td { padding: 11px 14px; border-bottom: 1px solid var(--line-soft); vertical-align: top; }
+  tbody tr:last-child td { border-bottom: none; }
+  td.t { font-family: "IBM Plex Mono", monospace; font-variant-numeric: tabular-nums; white-space: nowrap; }
+  td strong { font-weight: 700; }
+  .sub { color: var(--muted); font-size: 12.5px; display: block; }
+
+  /* today's stop rail */
+  .days { display: flex; flex-direction: column; }
+  .day { display: grid; grid-template-columns: 96px 1fr; gap: 0 22px; padding: 16px 0; border-top: 1px solid var(--line-soft); align-items: start; }
+  .day:first-child { border-top: 1px solid var(--line); }
+  .day .when { font-family: "IBM Plex Mono", monospace; font-variant-numeric: tabular-nums; font-size: 13px; color: var(--ink-soft); padding-top: 1px; }
+  .day .when b { display: block; font-size: 15px; font-weight: 600; color: var(--ink); }
+  .day .what { display: flex; flex-direction: column; gap: 7px; }
+  .day .what p { font-size: 14.8px; }
+  .map { font-family: "IBM Plex Mono", ui-monospace, monospace; font-size: 12.5px; color: var(--azul-ink); background: var(--azul-wash); border: 1px solid color-mix(in srgb, var(--azul) 30%, transparent); border-radius: 2px; padding: 4px 9px; display: inline-block; max-width: 100%; }
+  .addr { font-size: 12.5px; color: var(--muted); }
+  .stopname { font-size: 15.5px; font-weight: 700; }
+  .stopname .pt { font-weight: 400; color: var(--muted); font-size: 13px; }
+
+  .tags { display: flex; flex-wrap: wrap; gap: 6px; }
+  .tag { font-family: "IBM Plex Mono", monospace; font-size: 10px; letter-spacing: .07em; text-transform: uppercase; padding: 2px 7px; border-radius: 2px; border: 1px solid; white-space: nowrap; }
+  .tag.free { color: var(--moss); border-color: color-mix(in srgb, var(--moss) 45%, transparent); background: var(--moss-wash); }
+  .tag.drive { color: var(--ochre); border-color: color-mix(in srgb, var(--ochre) 45%, transparent); background: var(--ochre-wash); }
+  .tag.key { color: var(--azul); border-color: color-mix(in srgb, var(--azul) 45%, transparent); background: var(--azul-wash); }
+
+  .leg { display: flex; flex-direction: column; gap: 4px; padding: 14px 16px; background: var(--azul-wash); border-left: 3px solid var(--azul); border-radius: 2px; }
+  .leg .name { font-weight: 700; font-size: 16px; }
+  .leg .meta { font-family: "IBM Plex Mono", monospace; font-size: 12.5px; color: var(--ink-soft); }
+
+  .note { border-left: 3px solid var(--ochre); background: var(--ochre-wash); padding: 13px 16px; border-radius: 2px; display: flex; flex-direction: column; gap: 7px; }
+  .note p, .note li { font-size: 14.3px; color: var(--ink-soft); }
+  .note strong { color: var(--ink); }
+
+  ul { margin: 0; padding-left: 18px; display: flex; flex-direction: column; gap: 6px; }
+  li { font-size: 14.8px; max-width: var(--measure); }
+
+  footer { border-top: 1px solid var(--line); padding-top: 18px; color: var(--muted); font-size: 13px; display: flex; flex-direction: column; gap: 5px; }
+
+  @media (max-width: 680px) {
+    body { font-size: 16px; }
+    .wrap { padding-block: 28px 56px; gap: 36px; }
+    .tw { overflow-x: visible; border: none; background: transparent; }
+    table { min-width: 0; width: 100%; }
+    thead { display: none; }
+    tbody tr { display: flex; flex-direction: column; gap: 3px; padding: 14px 15px; background: var(--surface); border: 1px solid var(--line); border-radius: 2px; }
+    tbody tr + tr { margin-top: 10px; }
+    tbody td { display: block; padding: 0; border: none; font-size: 14.6px; }
+    tbody td:first-child { font-size: 16px; }
+    td.t { color: var(--azul-ink); font-size: 13px; font-weight: 600; order: -1; }
+    .day { grid-template-columns: 1fr; gap: 7px; padding: 16px 0; }
+    .day .when { font-size: 13px; color: var(--azul-ink); font-weight: 600; }
+    .day .when b { display: inline; font-size: 13px; color: var(--azul-ink); margin-right: 4px; }
+    .facts { gap: 12px 22px; }
+    .note, .leg { padding: 14px 15px; }
+  }
+  @media print {
+    body { background: #fff; }
+    .day, .leg, .note, .tw { break-inside: avoid; }
+  }
+</style>
+
+<div class="wrap">
+
+  <header class="top">
+    <div class="eyebrow">Ciel &amp; Michael · Wedding Week · Sep 20 – 27</div>
+    <h1>This Week in Lisbon</h1>
+    <p class="route">Week one of the 27-day Portugal trip: staying in São Bento in the city centre, Zeinab &amp; Iago's wedding on Saturday, then checking out Sunday and driving to the Douro Valley. Michael is on vacation all week. Today (Mon Sep 21) is planned in detail below; Tuesday onward stays rough — we'll firm those up tomorrow. <a href="index.html">中文版</a></p>
+    <div class="facts">
+      <div class="fact"><span class="k">Home base</span><span class="v">Travessa de São Plácido 48</span></div>
+      <div class="fact"><span class="k">Neighbourhood</span><span class="v">São Bento / Chiado</span></div>
+      <div class="fact"><span class="k">Wedding</span><span class="v">Sat Sep 26</span></div>
+      <div class="fact"><span class="k">Check-out</span><span class="v">Sun Sep 27 · pick up car, drive to Douro</span></div>
+    </div>
+  </header>
+
+  <section>
+    <div class="sec-head">
+      <h2>The week at a glance</h2>
+      <p>Monday's detail is in the next section. The rest gets planned tomorrow.</p>
+    </div>
+    <div class="tw">
+      <table>
+        <thead><tr><th>Date</th><th>Plan</th><th>Notes</th></tr></thead>
+        <tbody>
+          <tr><td class="t">Mon 9/21</td><td><strong>City loop (today)</strong><span class="sub">Tram → castle → Alfama → Chiado → Príncipe Real</span></td><td>Ciel has a 15–30 min call at 18:30 · dinner with two of Michael's friends</td></tr>
+          <tr><td class="t">Tue 9/22</td><td><strong>Sintra</strong><span class="sub">Pena Palace early slot + Quinta da Regaleira</span></td><td>Buy Pena tickets today for the 10:00–10:30 slot (parquesdesintra.pt) · 40-min train from Rossio</td></tr>
+          <tr><td class="t">Wed 9/23</td><td><strong>Belém + LX Factory</strong><span class="sub">Jerónimos · Belém Tower · the original pastel de nata shop</span></td><td>Pensão Amor Bar Night in the evening (wedding event, starts late)</td></tr>
+          <tr><td class="t">Thu 9/24</td><td><strong>Full day in Cascais</strong><span class="sub">Coastal walk + Cabo da Roca</span></td><td>40-min coastal train · bus 403 or taxi to Cabo da Roca in the afternoon</td></tr>
+          <tr><td class="t">Fri 9/25</td><td><strong>Welcome Dinner</strong><span class="sub">Quinta de Sant'Ana, Gradil</span></td><td>Dress code Chic: bold reds and blues, the brighter the better · day is free, Gulbenkian if in the mood</td></tr>
+          <tr><td class="t">Sat 9/26</td><td><strong>Wedding day</strong><span class="sub">incl. Persian Sofreh Aghd ceremony</span></td><td>Dress code Formal: earth tones · venue is 30 min away, take Uber/Bolt</td></tr>
+          <tr><td class="t">Sun 9/27</td><td><strong>Check out → Douro Valley</strong><span class="sub">Pick up the car, drive north via Coimbra</span></td><td>5–6 hours total · book the rental this week</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section>
+    <div class="sec-head">
+      <h2>Today: Monday Sep 21 · the city loop</h2>
+      <p>Tram east and uphill from home, then one long walk west and downhill back — no backtracking. About 6 km on foot, nothing has a timed entry, and the only hard deadline is the 18:30 call. Paste the blue boxes straight into Google Maps.</p>
+    </div>
+
+    <div class="days">
+
+      <div class="day"><div class="when"><b>9:30</b>tram</div><div class="what">
+        <span class="stopname">Tram 28 <span class="pt">Tram 28E</span></span>
+        <span class="map">Tram 28 São Bento stop</span>
+        <span class="addr">On Calçada da Estrela, 3 min from the flat · direction Martim Moniz, about 25 min</span>
+        <p>A 1930s wooden tram that is an attraction in its own right — it squeezes through alleys and climbs hills across Lisbon's oldest quarters. Boarding near home means it's still uncrowded. <strong>Watch phones and wallets on board</strong> — this is the city's pickpocket hotspot. If it's packed, just Uber to the next stop, 10 minutes.</p>
+      </div></div>
+
+      <div class="day"><div class="when"><b>10:00</b>viewpoint</div><div class="what">
+        <span class="stopname">Miradouro de Santa Luzia</span>
+        <span class="map">Miradouro de Santa Luzia</span>
+        <span class="addr">Largo Santa Luzia · get off at the "Miradouro Sta. Luzia" stop</span>
+        <p>Lisbon's most photogenic viewpoint: a bougainvillea-covered pergola, two old azulejo panels (one shows the 1147 siege of the castle), and Alfama's red rooftops running down to the river. Small and lovely — 15 minutes.</p>
+      </div></div>
+
+      <div class="day"><div class="when"><b>10:10</b>viewpoint</div><div class="what">
+        <span class="stopname">Miradouro das Portas do Sol</span>
+        <span class="map">Miradouro das Portas do Sol</span>
+        <span class="addr">Largo das Portas do Sol · right next door, 2 min</span>
+        <p>The wider-angle one — the whole white-and-terracotta old town, two church domes, cruise ships on the river. There's an open-air café if you want an espresso before the climb.</p>
+      </div></div>
+
+      <div class="day"><div class="when"><b>10:30<br>–12:00</b>castle</div><div class="what">
+        <span class="stopname">São Jorge Castle <span class="pt">Castelo de São Jorge</span></span>
+        <span class="map">Castelo de São Jorge</span>
+        <span class="addr">R. de Santa Cruz do Castelo · 10-min uphill walk from the viewpoints · buy tickets at castelodesaojorge.pt to skip the line</span>
+        <p>The highest point in Lisbon. An 11th-century Moorish castle that Portugal's first king took in 1147 — one of the founding moments of the country. The draw isn't palace interiors (long gone) but the full circuit of ramparts you can climb, 11 watchtowers, the best view in the city, and peacocks wandering the pine gardens. Plenty of benches — today's best spot to do nothing for a while.</p>
+        <div class="tags"><span class="tag key">book ahead</span></div>
+      </div></div>
+
+      <div class="day"><div class="when"><b>12:00<br>–13:00</b>old town</div><div class="what">
+        <span class="stopname">Alfama alleys + Lisbon Cathedral <span class="pt">Sé de Lisboa</span></span>
+        <span class="map">Sé de Lisboa</span>
+        <span class="addr">Largo da Sé · wander downhill from the castle, you'll hit it</span>
+        <p>Alfama is Lisbon's oldest quarter and the only part that survived the 1755 earthquake, so its Moorish-era maze is intact — laundry overhead, tiled doorways, grilled sardines drifting from corner taverns. <strong>Don't use the map; getting lost is the point</strong> — keep heading downhill. This is also the birthplace of fado. Halfway down you'll pass the cathedral: the city's oldest church, begun in 1147, built like a fortress — those two bell towers really were defensive towers. 15 minutes inside, it's on the way.</p>
+      </div></div>
+
+      <div class="day"><div class="when"><b>13:00<br>–14:15</b>lunch</div><div class="what">
+        <span class="stopname">Zé da Mouraria (first choice)</span>
+        <span class="map">Zé da Mouraria</span>
+        <span class="addr">Rua João do Outeiro 24, Mouraria · lunch only</span>
+        <p>An old tasca hidden in Mouraria — the canteen of local office workers, walls covered in fado singer photos. The signature is roast salt cod (bacalhau assado); portions are big enough to share one main between two. <strong>Backup: O Velho Eurico</strong> (Largo São Cristóvão 3) — an old tavern taken over by a young crew doing petiscos; the octopus and crispy pork belly are great, arrive early. Both are on the walk down from the castle.</p>
+      </div></div>
+
+      <div class="day"><div class="when"><b>14:30</b>square</div><div class="what">
+        <span class="stopname">Praça do Comércio + Rua Augusta Arch</span>
+        <span class="map">Praça do Comércio</span>
+        <span class="addr">On the river · walk up through the Arco da Rua Augusta into Baixa</span>
+        <p>The 1755 earthquake flattened the royal palace; this grand square rose on its site — bright yellow arcades on three sides, the Tagus wide open on the fourth, one of Europe's biggest riverfront squares. In the age of sail, cargo came ashore right here. Have a look, take the photo, then head up the pedestrian street toward Chiado.</p>
+      </div></div>
+
+      <div class="day"><div class="when"><b>15:00<br>–16:15</b>Chiado</div><div class="what">
+        <span class="stopname">Chiado trio: bookshop · café · ruined convent</span>
+        <span class="map">Livraria Bertrand Chiado</span>
+        <span class="addr">Rua Garrett 73 · A Brasileira at Rua Garrett 120 · Convento do Carmo at Largo do Carmo</span>
+        <p><strong>Livraria Bertrand</strong>: open since 1732, Guinness-certified oldest operating bookstore in the world, blue-tiled façade; buy a Pessoa and get the commemorative stamp. <strong>A Brasileira</strong>: a 1905 café whose bronze statue out front is Pessoa himself, who drank his coffee here daily — a bica standing at the counter is the authentic (and half-price) move. <strong>Convento do Carmo</strong>: today's most remarkable stop — the 1755 quake brought the church roof down mid-mass, and instead of rebuilding, Lisbon left the Gothic stone skeleton open to the sky for 250+ years. Walking into that roofless nave is unforgettable. If you're flagging, this is the first thing to cut.</p>
+      </div></div>
+
+      <div class="day"><div class="when"><b>16:15<br>–17:45</b>shops</div><div class="what">
+        <span class="stopname">Príncipe Real + Embaixada</span>
+        <span class="map">Embaixada Lisboa</span>
+        <span class="addr">Praça do Príncipe Real 26 · more boutiques along Rua Dom Pedro V</span>
+        <p>Your own neighbourhood — Lisbon's densest cluster of design and concept stores. The garden's centrepiece is a century-old cedar spread out like an umbrella, with a kiosk café underneath. <strong>Embaixada</strong> is a 19th-century Moorish-revival palace turned concept store — one Portuguese brand per room (clothes, fragrance, ceramics), and the staircase and courtyard are worth the visit alone. No pressure to finish today; it's next door, any evening works.</p>
+      </div></div>
+
+      <div class="day"><div class="when"><b>18:00</b>home</div><div class="what">
+        <span class="stopname">Walk home, call at 18:30</span>
+        <span class="addr">Travessa de São Plácido 48 · 10 min downhill</span>
+        <p>Time to freshen up before Ciel's 15–30 minute call.</p>
+      </div></div>
+
+      <div class="day"><div class="when"><b>19:15</b>sunset</div><div class="what">
+        <span class="stopname">Sunset drink <span class="pt">Miradouro de São Pedro de Alcântara</span></span>
+        <span class="map">Miradouro de São Pedro de Alcântara</span>
+        <span class="addr">R. de São Pedro de Alcântara · 10-min walk · sunset ~19:30</span>
+        <p>Facing east over Baixa, the castle hill and the river — the whole day's route laid out in front of you. Grab a white port at the kiosk, watch the castle hill turn gold, then head to dinner.</p>
+        <div class="tags"><span class="tag free">sunset</span></div>
+      </div></div>
+
+      <div class="day"><div class="when"><b>20:00</b>dinner</div><div class="what">
+        <span class="stopname">Dinner for 4 with Michael's friends · place TBD</span>
+        <p><strong>Bairro do Avillez</strong> (Chiado, walkable) — lively, broad menu, best odds of a same-day table for 4; the group-dinner pick. <strong>Cervejaria Ramiro</strong> — the seafood institution: garlic prawns and spider crab; no reservations, arrive at opening or expect a 40-min wait (check it's open Mondays). <strong>Taberna Sal Grosso / O Velho Eurico</strong> — small local spots, great and cheap, few tables. <strong>A Cevicheria</strong> (Príncipe Real) — the lighter option. <strong>Book now on TheFork or Google Maps.</strong></p>
+        <div class="tags"><span class="tag key">book a table</span></div>
+      </div></div>
+
+    </div>
+
+    <div class="note">
+      <p><strong>If energy runs low, cut in this order:</strong> Convento do Carmo first, then walk straight through Baixa without lingering; Bertrand and A Brasileira are 5-minute drop-ins anyway. Príncipe Real is next door and can be made up any evening.</p>
+      <p><strong>Three things to sort out today:</strong> ① Pena Palace tickets for <strong>tomorrow</strong>, 10:00–10:30 slot (parquesdesintra.pt — don't pick the wrong date) ② castle tickets online ③ tonight's table for 4.</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="sec-head">
+      <h2>The three wedding events (note the dress codes)</h2>
+    </div>
+    <div class="tw">
+      <table>
+        <thead><tr><th>Date</th><th>Event</th><th>Venue</th><th>Dress</th></tr></thead>
+        <tbody>
+          <tr><td class="t">Wed 9/23</td><td><strong>Pensão Amor Bar Night</strong><span class="sub">"the bar where it all began"</span></td><td>Pensão Amor, Pink Street</td><td>—</td></tr>
+          <tr><td class="t">Fri 9/25</td><td><strong>Welcome Dinner</strong></td><td>Quinta de Sant'Ana, Gradil</td><td><strong>Chic</strong>: bold reds and blues, the brighter the better</td></tr>
+          <tr><td class="t">Sat 9/26</td><td><strong>Wedding day</strong><span class="sub">incl. Persian Sofreh Aghd ceremony</span></td><td>Quinta de Sant'Ana, Gradil</td><td><strong>Formal</strong>: earth tones — warm neutrals, deep green, terracotta</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="note">
+      <p>The venue is about <strong>30 minutes from Lisbon</strong> with very little parking — the couple recommends everyone takes an Uber or Bolt.</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="sec-head">
+      <h2>Still to book this week</h2>
+    </div>
+    <ul>
+      <li><strong>Douro rental car</strong> — pick up in Lisbon Sun 9/27, drop in Porto 9/30, automatic; needed this Sunday</li>
+      <li><strong>Quinta do Bomfim and Quinta da Roêda</strong> visits — harvest week sells out; ask Roêda about grape stomping on our dates</li>
+      <li>Rabelo boat at the Pinhão pier and dinner reservations in the village — only a handful of restaurants</li>
+      <li>Pena Palace tickets for tomorrow (buy today)</li>
+    </ul>
+  </section>
+
+  <footer>
+    <div>Updated Monday morning, Sep 21, 2026. Today's loop is planned in detail; Tuesday onward gets firmed up tomorrow.</div>
+    <div>Full 27-day itinerary: <a href="full.html">里斯本到拉各斯</a> · <a href="index.html">中文版</a></div>
+  </footer>
+
+</div>
+</body>
+</html>
