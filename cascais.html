@@ -1,0 +1,263 @@
+<!doctype html>
+<html lang="zh">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="9/23 Cascais 一日路线">
+<meta name="robots" content="noindex">
+<title>今天去 Cascais</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Karla:wght@400;500;600;700&family=Noto+Serif+SC:wght@400;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap">
+<style>*,*::before,*::after{box-sizing:border-box}body{margin:0;padding:0}img{max-width:100%}</style>
+</head>
+<body>
+<style>
+  :root {
+    --paper:    #F7F6F2;
+    --surface:  #FFFFFF;
+    --surface-2:#EFEFE9;
+    --ink:      #1B2430;
+    --ink-soft: #3E4A59;
+    --muted:    #6C7787;
+    --line:     #E1E1DA;
+    --line-soft:#ECECE5;
+    --azul:     #2A4E8F;
+    --azul-ink: #2A4E8F;
+    --azul-wash:#E6ECF7;
+    --ochre:    #96621A;
+    --ochre-wash:#F6EDDD;
+    --moss:     #3C6A4D;
+    --moss-wash:#E4EEE6;
+    --measure: 42em;
+    color-scheme: light;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --paper:    #12161C;
+      --surface:  #1A2028;
+      --surface-2:#222A34;
+      --ink:      #E9ECF1;
+      --ink-soft: #C3CAD4;
+      --muted:    #929CAA;
+      --line:     #2C3542;
+      --line-soft:#232B35;
+      --azul:     #8AB0EC;
+      --azul-ink: #A2C2F2;
+      --azul-wash:#1B2635;
+      --ochre:    #D7A85C;
+      --ochre-wash:#2B2317;
+      --moss:     #85B394;
+      --moss-wash:#1A2820;
+      color-scheme: dark;
+    }
+  }
+  :root[data-theme="dark"] {
+    --paper:    #12161C;
+    --surface:  #1A2028;
+    --surface-2:#222A34;
+    --ink:      #E9ECF1;
+    --ink-soft: #C3CAD4;
+    --muted:    #929CAA;
+    --line:     #2C3542;
+    --line-soft:#232B35;
+    --azul:     #8AB0EC;
+    --azul-ink: #A2C2F2;
+    --azul-wash:#1B2635;
+    --ochre:    #D7A85C;
+    --ochre-wash:#2B2317;
+    --moss:     #85B394;
+    --moss-wash:#1A2820;
+    color-scheme: dark;
+  }
+
+  body {
+    background: var(--paper);
+    color: var(--ink);
+    font-family: Karla, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", ui-sans-serif, system-ui, sans-serif;
+    font-size: 15.5px;
+    line-height: 1.65;
+    -webkit-font-smoothing: antialiased;
+  }
+  .wrap { max-width: 860px; margin: 0 auto; padding-inline: 20px; padding-block: 40px 72px; display: flex; flex-direction: column; gap: 44px; }
+
+  h1, h2, h3 { margin: 0; text-wrap: balance; }
+  h1 { font-family: "Instrument Serif", "Noto Serif SC", Georgia, serif; font-weight: 400; font-size: clamp(38px, 8vw, 62px); line-height: 1.05; letter-spacing: -.01em; }
+  h2 { font-family: "Instrument Serif", "Noto Serif SC", Georgia, serif; font-weight: 400; font-size: clamp(25px, 4vw, 32px); line-height: 1.15; }
+  h3 { font-size: 15px; font-weight: 700; letter-spacing: .01em; }
+  p { margin: 0; max-width: var(--measure); }
+  a { color: var(--azul-ink); }
+
+  .mono { font-family: "IBM Plex Mono", ui-monospace, monospace; font-variant-numeric: tabular-nums; }
+  .eyebrow { font-family: "IBM Plex Mono", ui-monospace, monospace; font-size: 11px; letter-spacing: .14em; text-transform: uppercase; color: var(--muted); }
+
+  header.top { display: flex; flex-direction: column; gap: 16px; }
+  header.top .route { font-size: 17px; color: var(--ink-soft); max-width: 60ch; }
+  .facts { display: flex; flex-wrap: wrap; gap: 14px 30px; border-top: 1px solid var(--line); padding-top: 16px; }
+  .fact { display: flex; flex-direction: column; gap: 2px; }
+  .fact .k { font-family: "IBM Plex Mono", monospace; font-size: 10.5px; letter-spacing: .12em; text-transform: uppercase; color: var(--muted); }
+  .fact .v { font-size: 15px; font-weight: 600; font-variant-numeric: tabular-nums; }
+
+  section { display: flex; flex-direction: column; gap: 18px; }
+  .sec-head { display: flex; flex-direction: column; gap: 5px; }
+  .sec-head p { color: var(--muted); font-size: 14.5px; }
+
+  .tw { overflow-x: auto; border: 1px solid var(--line); border-radius: 2px; background: var(--surface); }
+  table { border-collapse: collapse; width: 100%; min-width: 540px; font-size: 14px; }
+  thead th { text-align: left; padding: 10px 14px; font-family: "IBM Plex Mono", monospace; font-size: 10px; letter-spacing: .11em; text-transform: uppercase; color: var(--muted); font-weight: 500; border-bottom: 1px solid var(--line); white-space: nowrap; }
+  tbody td { padding: 11px 14px; border-bottom: 1px solid var(--line-soft); vertical-align: top; }
+  tbody tr:last-child td { border-bottom: none; }
+  td.t { font-family: "IBM Plex Mono", monospace; font-variant-numeric: tabular-nums; white-space: nowrap; }
+  td strong { font-weight: 700; }
+  .sub { color: var(--muted); font-size: 12.5px; display: block; }
+
+  /* today's stop rail */
+  .days { display: flex; flex-direction: column; }
+  .day { display: grid; grid-template-columns: 96px 1fr; gap: 0 22px; padding: 16px 0; border-top: 1px solid var(--line-soft); align-items: start; }
+  .day:first-child { border-top: 1px solid var(--line); }
+  .day .when { font-family: "IBM Plex Mono", monospace; font-variant-numeric: tabular-nums; font-size: 13px; color: var(--ink-soft); padding-top: 1px; }
+  .day .when b { display: block; font-size: 15px; font-weight: 600; color: var(--ink); }
+  .day .what { display: flex; flex-direction: column; gap: 7px; }
+  .day .what p { font-size: 14.8px; }
+  .map { font-family: "IBM Plex Mono", ui-monospace, monospace; font-size: 12.5px; color: var(--azul-ink); background: var(--azul-wash); border: 1px solid color-mix(in srgb, var(--azul) 30%, transparent); border-radius: 2px; padding: 4px 9px; display: inline-block; max-width: 100%; }
+  .addr { font-size: 12.5px; color: var(--muted); }
+  .stopname { font-size: 15.5px; font-weight: 700; }
+  .stopname .pt { font-weight: 400; color: var(--muted); font-size: 13px; }
+
+  .tags { display: flex; flex-wrap: wrap; gap: 6px; }
+  .tag { font-family: "IBM Plex Mono", monospace; font-size: 10px; letter-spacing: .07em; text-transform: uppercase; padding: 2px 7px; border-radius: 2px; border: 1px solid; white-space: nowrap; }
+  .tag.free { color: var(--moss); border-color: color-mix(in srgb, var(--moss) 45%, transparent); background: var(--moss-wash); }
+  .tag.drive { color: var(--ochre); border-color: color-mix(in srgb, var(--ochre) 45%, transparent); background: var(--ochre-wash); }
+  .tag.key { color: var(--azul); border-color: color-mix(in srgb, var(--azul) 45%, transparent); background: var(--azul-wash); }
+
+  .leg { display: flex; flex-direction: column; gap: 4px; padding: 14px 16px; background: var(--azul-wash); border-left: 3px solid var(--azul); border-radius: 2px; }
+  .leg .name { font-weight: 700; font-size: 16px; }
+  .leg .meta { font-family: "IBM Plex Mono", monospace; font-size: 12.5px; color: var(--ink-soft); }
+
+  .note { border-left: 3px solid var(--ochre); background: var(--ochre-wash); padding: 13px 16px; border-radius: 2px; display: flex; flex-direction: column; gap: 7px; }
+  .note p, .note li { font-size: 14.3px; color: var(--ink-soft); }
+  .note strong { color: var(--ink); }
+
+  ul { margin: 0; padding-left: 18px; display: flex; flex-direction: column; gap: 6px; }
+  li { font-size: 14.8px; max-width: var(--measure); }
+
+  footer { border-top: 1px solid var(--line); padding-top: 18px; color: var(--muted); font-size: 13px; display: flex; flex-direction: column; gap: 5px; }
+
+  @media (max-width: 680px) {
+    body { font-size: 16px; }
+    .wrap { padding-block: 28px 56px; gap: 36px; }
+    .tw { overflow-x: visible; border: none; background: transparent; }
+    table { min-width: 0; width: 100%; }
+    thead { display: none; }
+    tbody tr { display: flex; flex-direction: column; gap: 3px; padding: 14px 15px; background: var(--surface); border: 1px solid var(--line); border-radius: 2px; }
+    tbody tr + tr { margin-top: 10px; }
+    tbody td { display: block; padding: 0; border: none; font-size: 14.6px; }
+    tbody td:first-child { font-size: 16px; }
+    td.t { color: var(--azul-ink); font-size: 13px; font-weight: 600; order: -1; }
+    .day { grid-template-columns: 1fr; gap: 7px; padding: 16px 0; }
+    .day .when { font-size: 13px; color: var(--azul-ink); font-weight: 600; }
+    .day .when b { display: inline; font-size: 13px; color: var(--azul-ink); margin-right: 4px; }
+    .facts { gap: 12px 22px; }
+    .note, .leg { padding: 14px 15px; }
+  }
+  @media print {
+    body { background: #fff; }
+    .day, .leg, .note, .tw { break-inside: avoid; }
+  }
+</style>
+
+<div class="wrap">
+
+  <header class="top">
+    <div class="eyebrow">Ciel &amp; Michael · 9/23 周三 · 婚礼周第 4 天</div>
+    <h1>今天去 Cascais</h1>
+    <p class="route">晚出门也完全不亏的一天：先坐着看 40 分钟海岸线，到了先吃海鲜，饭后沿悬崖散步，想加码就去罗卡角。今晚是 Pensão Amor 的 Bar Night，所以下午不恋战，19:00 前到家。蓝色框直接贴进 Google Maps。<a href="cascais-en.html">English version</a></p>
+    <div class="facts">
+      <div class="fact"><span class="k">发车站</span><span class="v">Cais do Sodré（不是 Rossio！）</span></div>
+      <div class="fact"><span class="k">车程</span><span class="v">40 分钟 · 每 20 分钟一班</span></div>
+      <div class="fact"><span class="k">今晚</span><span class="v">Pensão Amor Bar Night</span></div>
+      <div class="fact"><span class="k">带上</span><span class="v">防晒 + 外套（悬崖风大）</span></div>
+    </div>
+  </header>
+
+  <section>
+    <div class="sec-head">
+      <h2>逐站路线</h2>
+      <p>按 11:30 出门算。全天没有一个点有固定时间，随便拖。</p>
+    </div>
+
+    <div class="days">
+
+      <div class="day"><div class="when"><b>11:30</b>出门</div><div class="what">
+        <span class="stopname">去 Cais do Sodré 火车站</span>
+        <span class="map">Cais do Sodré Station</span>
+        <span class="addr">打车 5 分钟 / 走 20 分钟 / 绿线地铁终点 · ⚠️ 去 Cascais 在这儿发车，Rossio 是去辛特拉的，别走错</span>
+        <p>Viva Viagem 卡充值买往返（zapping 充值最省事），站里自助机就能办。上车<strong>坐左手边靠窗</strong>——出城十分钟后铁轨就贴着海岸线走，Belém、Estoril 一路的海景全在这一侧。</p>
+      </div></div>
+
+      <div class="day"><div class="when"><b>11:50</b>火车</div><div class="what">
+        <span class="stopname">Cascais 线海岸火车 <span class="pt">Linha de Cascais</span></span>
+        <span class="addr">40 分钟直达终点站 Cascais · 沿途经过 Belém、Estoril 的海滨别墅区</span>
+        <p>这条 1889 年通车的老线路是里斯本人的「去海边」专线，本身就算半个景点。终点下车出站就是 Cascais 老城，一个 19 世纪王室避暑地变成的渔港小镇。</p>
+      </div></div>
+
+      <div class="day"><div class="when"><b>12:35</b>午饭</div><div class="what">
+        <span class="stopname">海鲜午饭：Mar do Inferno</span>
+        <span class="map">Mar do Inferno Cascais</span>
+        <span class="addr">Av. Rei Humberto II de Itália · 从车站打车 5 分钟，或沿海边走 25 分钟 · 就开在 Boca do Inferno 悬崖边上</span>
+        <p>开在悬崖上的老牌海鲜馆子，窗外就是大西洋——鲜鱼按公斤挑、蒜油大虾、海鲜饭都靠谱，吃完出门走两步就是景点，动线最顺。<strong>备选（想先逛老城再吃）：</strong>老城里的 <span class="mono">Baía do Peixe</span>（Av. Dom Carlos I，烤鱼自助）或随便一家看着顺眼的 marisqueira。</p>
+        <div class="tags"><span class="tag key">今天正餐</span></div>
+      </div></div>
+
+      <div class="day"><div class="when"><b>14:15</b>景点</div><div class="what">
+        <span class="stopname">地狱之口 <span class="pt">Boca do Inferno</span></span>
+        <span class="map">Boca do Inferno</span>
+        <span class="addr">Av. Rei Humberto II de Itália · 就在饭馆旁边</span>
+        <p>海水几百万年在石灰岩悬崖上凿出来的洞和拱门，浪大的时候海水灌进来会发出轰响、喷起水雾——「地狱之口」的名字就是这么来的。今天浪小也值得看：站在拱门上方能看到海水在洞里打转的翡翠色。看完沿着悬崖步道往回慢慢走，一路都是海景。</p>
+      </div></div>
+
+      <div class="day"><div class="when"><b>15:00</b>二选一</div><div class="what">
+        <span class="stopname">选项 ① 悠闲版：老城 + 冰淇淋</span>
+        <span class="map">Santini Cascais</span>
+        <span class="addr">Av. Valbom 28 · 老城步行街 Rua Frederico Arouca 一带</span>
+        <p>沿海边走回老城：<strong>Santini</strong> 是 1949 年开到现在的冰淇淋老店，当年王室流亡贵族都来吃。然后逛步行街、Praia da Rainha 那个夹在楼群里的迷你海湾、城堡改的 <strong>Cidadela 要塞</strong>和游艇码头。节奏完全是度假的。</p>
+      </div></div>
+
+      <div class="day"><div class="when"><b>15:00</b>或</div><div class="what">
+        <span class="stopname">选项 ② 加码版：罗卡角 <span class="pt">Cabo da Roca</span></span>
+        <span class="map">Cabo da Roca</span>
+        <span class="addr">打车 / Uber 约 20 分钟 · 403 路公交也到但绕且慢，来回打车能省一小时</span>
+        <p>欧洲大陆的最西端：140 米的悬崖、一座灯塔、一块刻着卡蒙斯诗句的石碑——「陆止于此，海始于斯」。风又大又冷，外套必须穿上，拍照 40 分钟足够。看完打车回 Cascais 车站直接上火车。<strong>今天不去也没关系</strong>——明天辛特拉出来打车过去也顺，两条路都通。</p>
+        <div class="tags"><span class="tag drive">打车往返</span></div>
+      </div></div>
+
+      <div class="day"><div class="when"><b>17:30</b>回程</div><div class="what">
+        <span class="stopname">火车回 Cais do Sodré</span>
+        <span class="addr">17:30–18:00 之间上车 · 19:00 前到家歇着</span>
+        <p>回程随便坐，反正 20 分钟一班。到家洗把脸、歇一会儿，晚饭吃个简单的——今晚的重头戏在后面。</p>
+      </div></div>
+
+      <div class="day"><div class="when"><b>晚上</b>Bar Night</div><div class="what">
+        <span class="stopname">Pensão Amor Bar Night（婚礼活动）</span>
+        <span class="map">Pensão Amor Lisboa</span>
+        <span class="addr">R. do Alecrim 19，Pink Street · 从家走过去 12 分钟</span>
+        <p>Zeinab &amp; Iago「一切开始的那家酒吧」——旧妓院改的酒吧，天鹅绒沙发、红灯罩、满墙old school画作，是 Pink Street 最有戏的一家。活动开始得晚，不用急，晚饭后慢慢过去。着装没有要求。</p>
+        <div class="tags"><span class="tag key">婚礼活动</span></div>
+      </div></div>
+
+    </div>
+
+    <div class="note">
+      <p><strong>今天顺手办一件事：</strong>在 parquesdesintra.pt 买<strong>明天（9/24 周四）</strong>佩纳宫 9:30–10:00 的早场票——明天早起从 Rossio 站出发，赶在旅行团前进宫，这才是辛特拉的正确打开方式。雷加莱拉到门口买票也行，但也可以一起买了。</p>
+      <p><strong>水是看的不是游的：</strong>这一带水温低、风大，海滩是散步和拍照用的。想游泳留给拉各斯。</p>
+    </div>
+  </section>
+
+  <footer>
+    <div>更新于 2026 年 9 月 23 日上午。</div>
+    <div>本周总览：<a href="index.html">里斯本这一周</a> · 完整 27 天：<a href="full.html">里斯本到拉各斯</a></div>
+  </footer>
+
+</div>
+</body>
+</html>
