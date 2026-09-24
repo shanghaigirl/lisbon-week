@@ -1,0 +1,271 @@
+<!doctype html>
+<html lang="zh">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="9/24 Belém 一日路线">
+<meta name="robots" content="noindex">
+<title>今天去 Belém</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Karla:wght@400;500;600;700&family=Noto+Serif+SC:wght@400;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap">
+<style>*,*::before,*::after{box-sizing:border-box}body{margin:0;padding:0}img{max-width:100%}</style>
+</head>
+<body>
+<style>
+  :root {
+    --paper:    #F7F6F2;
+    --surface:  #FFFFFF;
+    --surface-2:#EFEFE9;
+    --ink:      #1B2430;
+    --ink-soft: #3E4A59;
+    --muted:    #6C7787;
+    --line:     #E1E1DA;
+    --line-soft:#ECECE5;
+    --azul:     #2A4E8F;
+    --azul-ink: #2A4E8F;
+    --azul-wash:#E6ECF7;
+    --ochre:    #96621A;
+    --ochre-wash:#F6EDDD;
+    --moss:     #3C6A4D;
+    --moss-wash:#E4EEE6;
+    --measure: 42em;
+    color-scheme: light;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --paper:    #12161C;
+      --surface:  #1A2028;
+      --surface-2:#222A34;
+      --ink:      #E9ECF1;
+      --ink-soft: #C3CAD4;
+      --muted:    #929CAA;
+      --line:     #2C3542;
+      --line-soft:#232B35;
+      --azul:     #8AB0EC;
+      --azul-ink: #A2C2F2;
+      --azul-wash:#1B2635;
+      --ochre:    #D7A85C;
+      --ochre-wash:#2B2317;
+      --moss:     #85B394;
+      --moss-wash:#1A2820;
+      color-scheme: dark;
+    }
+  }
+  :root[data-theme="dark"] {
+    --paper:    #12161C;
+    --surface:  #1A2028;
+    --surface-2:#222A34;
+    --ink:      #E9ECF1;
+    --ink-soft: #C3CAD4;
+    --muted:    #929CAA;
+    --line:     #2C3542;
+    --line-soft:#232B35;
+    --azul:     #8AB0EC;
+    --azul-ink: #A2C2F2;
+    --azul-wash:#1B2635;
+    --ochre:    #D7A85C;
+    --ochre-wash:#2B2317;
+    --moss:     #85B394;
+    --moss-wash:#1A2820;
+    color-scheme: dark;
+  }
+
+  body {
+    background: var(--paper);
+    color: var(--ink);
+    font-family: Karla, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", ui-sans-serif, system-ui, sans-serif;
+    font-size: 15.5px;
+    line-height: 1.65;
+    -webkit-font-smoothing: antialiased;
+  }
+  .wrap { max-width: 860px; margin: 0 auto; padding-inline: 20px; padding-block: 40px 72px; display: flex; flex-direction: column; gap: 44px; }
+
+  h1, h2, h3 { margin: 0; text-wrap: balance; }
+  h1 { font-family: "Instrument Serif", "Noto Serif SC", Georgia, serif; font-weight: 400; font-size: clamp(38px, 8vw, 62px); line-height: 1.05; letter-spacing: -.01em; }
+  h2 { font-family: "Instrument Serif", "Noto Serif SC", Georgia, serif; font-weight: 400; font-size: clamp(25px, 4vw, 32px); line-height: 1.15; }
+  h3 { font-size: 15px; font-weight: 700; letter-spacing: .01em; }
+  p { margin: 0; max-width: var(--measure); }
+  a { color: var(--azul-ink); }
+
+  .mono { font-family: "IBM Plex Mono", ui-monospace, monospace; font-variant-numeric: tabular-nums; }
+  .eyebrow { font-family: "IBM Plex Mono", ui-monospace, monospace; font-size: 11px; letter-spacing: .14em; text-transform: uppercase; color: var(--muted); }
+
+  header.top { display: flex; flex-direction: column; gap: 16px; }
+  header.top .route { font-size: 17px; color: var(--ink-soft); max-width: 60ch; }
+  .facts { display: flex; flex-wrap: wrap; gap: 14px 30px; border-top: 1px solid var(--line); padding-top: 16px; }
+  .fact { display: flex; flex-direction: column; gap: 2px; }
+  .fact .k { font-family: "IBM Plex Mono", monospace; font-size: 10.5px; letter-spacing: .12em; text-transform: uppercase; color: var(--muted); }
+  .fact .v { font-size: 15px; font-weight: 600; font-variant-numeric: tabular-nums; }
+
+  section { display: flex; flex-direction: column; gap: 18px; }
+  .sec-head { display: flex; flex-direction: column; gap: 5px; }
+  .sec-head p { color: var(--muted); font-size: 14.5px; }
+
+  .tw { overflow-x: auto; border: 1px solid var(--line); border-radius: 2px; background: var(--surface); }
+  table { border-collapse: collapse; width: 100%; min-width: 540px; font-size: 14px; }
+  thead th { text-align: left; padding: 10px 14px; font-family: "IBM Plex Mono", monospace; font-size: 10px; letter-spacing: .11em; text-transform: uppercase; color: var(--muted); font-weight: 500; border-bottom: 1px solid var(--line); white-space: nowrap; }
+  tbody td { padding: 11px 14px; border-bottom: 1px solid var(--line-soft); vertical-align: top; }
+  tbody tr:last-child td { border-bottom: none; }
+  td.t { font-family: "IBM Plex Mono", monospace; font-variant-numeric: tabular-nums; white-space: nowrap; }
+  td strong { font-weight: 700; }
+  .sub { color: var(--muted); font-size: 12.5px; display: block; }
+
+  /* today's stop rail */
+  .days { display: flex; flex-direction: column; }
+  .day { display: grid; grid-template-columns: 96px 1fr; gap: 0 22px; padding: 16px 0; border-top: 1px solid var(--line-soft); align-items: start; }
+  .day:first-child { border-top: 1px solid var(--line); }
+  .day .when { font-family: "IBM Plex Mono", monospace; font-variant-numeric: tabular-nums; font-size: 13px; color: var(--ink-soft); padding-top: 1px; }
+  .day .when b { display: block; font-size: 15px; font-weight: 600; color: var(--ink); }
+  .day .what { display: flex; flex-direction: column; gap: 7px; }
+  .day .what p { font-size: 14.8px; }
+  .map { font-family: "IBM Plex Mono", ui-monospace, monospace; font-size: 12.5px; color: var(--azul-ink); background: var(--azul-wash); border: 1px solid color-mix(in srgb, var(--azul) 30%, transparent); border-radius: 2px; padding: 4px 9px; display: inline-block; max-width: 100%; }
+  .addr { font-size: 12.5px; color: var(--muted); }
+  .stopname { font-size: 15.5px; font-weight: 700; }
+  .stopname .pt { font-weight: 400; color: var(--muted); font-size: 13px; }
+
+  .tags { display: flex; flex-wrap: wrap; gap: 6px; }
+  .tag { font-family: "IBM Plex Mono", monospace; font-size: 10px; letter-spacing: .07em; text-transform: uppercase; padding: 2px 7px; border-radius: 2px; border: 1px solid; white-space: nowrap; }
+  .tag.free { color: var(--moss); border-color: color-mix(in srgb, var(--moss) 45%, transparent); background: var(--moss-wash); }
+  .tag.drive { color: var(--ochre); border-color: color-mix(in srgb, var(--ochre) 45%, transparent); background: var(--ochre-wash); }
+  .tag.key { color: var(--azul); border-color: color-mix(in srgb, var(--azul) 45%, transparent); background: var(--azul-wash); }
+
+  .leg { display: flex; flex-direction: column; gap: 4px; padding: 14px 16px; background: var(--azul-wash); border-left: 3px solid var(--azul); border-radius: 2px; }
+  .leg .name { font-weight: 700; font-size: 16px; }
+  .leg .meta { font-family: "IBM Plex Mono", monospace; font-size: 12.5px; color: var(--ink-soft); }
+
+  .note { border-left: 3px solid var(--ochre); background: var(--ochre-wash); padding: 13px 16px; border-radius: 2px; display: flex; flex-direction: column; gap: 7px; }
+  .note p, .note li { font-size: 14.3px; color: var(--ink-soft); }
+  .note strong { color: var(--ink); }
+
+  ul { margin: 0; padding-left: 18px; display: flex; flex-direction: column; gap: 6px; }
+  li { font-size: 14.8px; max-width: var(--measure); }
+
+  footer { border-top: 1px solid var(--line); padding-top: 18px; color: var(--muted); font-size: 13px; display: flex; flex-direction: column; gap: 5px; }
+
+  @media (max-width: 680px) {
+    body { font-size: 16px; }
+    .wrap { padding-block: 28px 56px; gap: 36px; }
+    .tw { overflow-x: visible; border: none; background: transparent; }
+    table { min-width: 0; width: 100%; }
+    thead { display: none; }
+    tbody tr { display: flex; flex-direction: column; gap: 3px; padding: 14px 15px; background: var(--surface); border: 1px solid var(--line); border-radius: 2px; }
+    tbody tr + tr { margin-top: 10px; }
+    tbody td { display: block; padding: 0; border: none; font-size: 14.6px; }
+    tbody td:first-child { font-size: 16px; }
+    td.t { color: var(--azul-ink); font-size: 13px; font-weight: 600; order: -1; }
+    .day { grid-template-columns: 1fr; gap: 7px; padding: 16px 0; }
+    .day .when { font-size: 13px; color: var(--azul-ink); font-weight: 600; }
+    .day .when b { display: inline; font-size: 13px; color: var(--azul-ink); margin-right: 4px; }
+    .facts { gap: 12px 22px; }
+    .note, .leg { padding: 14px 15px; }
+  }
+  @media print {
+    body { background: #fff; }
+    .day, .leg, .note, .tw { break-inside: avoid; }
+  }
+</style>
+
+<div class="wrap">
+
+  <header class="top">
+    <div class="eyebrow">Ciel &amp; Michael · 9/24 周四 · 婚礼周第 5 天</div>
+    <h1>今天去 Belém</h1>
+    <p class="route">大航海时代的一天：香料钱堆出来的修道院、蛋挞的祖师店、出海口的瞭望塔，加一座满是镀金马车的博物馆。都在城里，打车 15 分钟就到，晚出门完全不亏。蓝色框直接贴进 Google Maps。<a href="belem-en.html">English version</a></p>
+    <div class="facts">
+      <div class="fact"><span class="k">怎么去</span><span class="v">打车 15 分钟 / 15E 电车</span></div>
+      <div class="fact"><span class="k">重点</span><span class="v">修道院回廊 + 蛋挞趁热吃</span></div>
+      <div class="fact"><span class="k">今天必办</span><span class="v">买明早佩纳宫 9:30 的票</span></div>
+      <div class="fact"><span class="k">明天</span><span class="v">辛特拉早去早回 · 晚上 Welcome Dinner</span></div>
+    </div>
+  </header>
+
+  <section>
+    <div class="sec-head">
+      <h2>逐站路线</h2>
+      <p>按 11:15 出门算。只有修道院一个点需要门票，现在就在线买（tickets.patrimoniocultural.gov.pt 或官方 Get Your Guide），选 12:00 前后的时段。</p>
+    </div>
+
+    <div class="days">
+
+      <div class="day"><div class="when"><b>11:15</b>出发</div><div class="what">
+        <span class="stopname">打车去 Belém</span>
+        <span class="addr">Bolt/Uber 约 15 分钟 · 想坐电车就去 Cais do Sodré 换 15E，慢一点但沿河（车上看好包）</span>
+        <p>目的地直接设「Pastéis de Belém」——先去排蛋挞，修道院就在隔壁。</p>
+      </div></div>
+
+      <div class="day"><div class="when"><b>11:40</b>蛋挞</div><div class="what">
+        <span class="stopname">蛋挞祖师店 <span class="pt">Pastéis de Belém</span></span>
+        <span class="map">Pasteis de Belem</span>
+        <span class="addr">R. de Belém 84 · 外卖队长的话直接进店里坐——里面一间套一间有上千个座位，翻台飞快</span>
+        <p>1837 年开业，配方来自隔壁修道院的修士，至今锁在店里一间密室，全世界只有几个人知道。只有这家能叫 <em>pastéis de Belém</em>，别家都只能叫 pastel de nata。<strong>一人先来两个，趁热，撒肉桂粉</strong>——温热的酥皮和焦糖蛋面是完全不同的东西。吃完往回走两步就是修道院。</p>
+        <div class="tags"><span class="tag key">趁热吃</span></div>
+      </div></div>
+
+      <div class="day"><div class="when"><b>12:15<br>–13:45</b>修道院</div><div class="what">
+        <span class="stopname">热罗尼莫斯修道院 <span class="pt">Mosteiro dos Jerónimos</span></span>
+        <span class="map">Jeronimos Monastery</span>
+        <span class="addr">Praça do Império · 教堂免费进，回廊要门票（在线买好时段票免排队）</span>
+        <p>1501 年动工，用的是香料贸易税——葡萄牙从印度航线抽的 5% 「胡椒钱」，盖了整整一百年。它是曼努埃尔式建筑的巅峰：石头雕成缆绳、珊瑚、浑天仪，整座建筑就是一艘不出海的船。<strong>免费的教堂里躺着达伽马</strong>（进门左手第一个石棺就是），但真正不能错过的是买票才能进的<strong>两层回廊</strong>——蜂蜜色的石头雕到没有一寸留白，是全里斯本最值一张门票的地方。UNESCO 世界遗产。</p>
+        <div class="tags"><span class="tag key">票提前买</span></div>
+      </div></div>
+
+      <div class="day"><div class="when"><b>14:00</b>午饭</div><div class="what">
+        <span class="stopname">Belém 午饭</span>
+        <span class="map">Enoteca de Belem</span>
+        <span class="addr">Travessa do Marta Pinto 10 · 修道院旁边的小巷里</span>
+        <p>藏在小巷里的酒馆小馆，葡萄牙菜配本地酒，安静不游客。<strong>备选：</strong>Rua de Belém 沿街随便挑一家 tasca，或者饿得不行就先随便垫一口，把正经晚饭留给晚上。</p>
+      </div></div>
+
+      <div class="day"><div class="when"><b>15:00</b>河边</div><div class="what">
+        <span class="stopname">发现者纪念碑 → 贝伦塔 <span class="pt">Padrão + Torre de Belém</span></span>
+        <span class="map">Padrao dos Descobrimentos</span>
+        <span class="addr">沿河步道连着走 · 贝伦塔搜 Belem Tower，步行 15 分钟</span>
+        <p><strong>发现者纪念碑</strong>：船头形状的巨碑，恩里克王子领着达伽马、麦哲伦一众人朝海的方向站着；看完记得低头——地上那幅巨大的罗盘世界地图马赛克，标着葡萄牙人每一次到达的年份。<strong>贝伦塔</strong>：1519 年守河口的要塞，当年船队出海前最后看到的就是它。<strong>看外观就够了</strong>——内部是一条又窄又慢的旋转楼梯队伍，时间花得不值。</p>
+      </div></div>
+
+      <div class="day"><div class="when"><b>16:00</b>马车</div><div class="what">
+        <span class="stopname">国家马车博物馆 <span class="pt">Museu Nacional dos Coches</span></span>
+        <span class="map">Museu Nacional dos Coches</span>
+        <span class="addr">Av. da Índia 136 · 从贝伦塔走回来的路上 · 开到 18:00，一小时够</span>
+        <p>全世界最重要的皇家马车收藏，没有之一。整整一厅 16 到 19 世纪的王室马车：整车镀金的巴洛克雕刻、天鹅绒内饰、车身上的寓言油画——1716 年葡萄牙国王派去罗马见教皇的那三辆使节马车，奢华到教皇本人都被镇住。<strong>本质上是一部「移动的高定史」</strong>——王室怎么用工艺炫耀国力，做奢侈品的人看这个会有职业共鸣。人少、凉快、一小时刚好。</p>
+        <div class="tags"><span class="tag key">今天的隐藏彩蛋</span></div>
+      </div></div>
+
+      <div class="day"><div class="when"><b>17:15</b>可选</div><div class="what">
+        <span class="stopname">还有力气再挑一个</span>
+        <span class="map">Jardim Botanico Tropical</span>
+        <span class="addr">修道院东侧门旁 · 或 MAAT（Av. Brasília 河边白色波浪建筑）</span>
+        <p><strong>热带植物园 Jardim Botânico Tropical</strong>：修道院隔壁的百年棕榈园，孔雀散养，游客极少，是 Belém 最安静的角落，适合坐一会儿消化今天。<strong>或者 MAAT</strong>：2016 年的波浪形博物馆，不买票也能走上屋顶坡道，看河和大桥的角度很好。<strong>或者都不去</strong>，直接回家，明天要早起。</p>
+        <div class="tags"><span class="tag free">可去可不去</span></div>
+      </div></div>
+
+      <div class="day"><div class="when"><b>18:00</b>回家</div><div class="what">
+        <span class="stopname">打车回家歇着</span>
+        <span class="addr">10 分钟到家</span>
+        <p>今晚没有活动，自由安排。想再出门的话见下一条。</p>
+      </div></div>
+
+      <div class="day"><div class="when"><b>20:15</b>可选</div><div class="what">
+        <span class="stopname">晚上想出门：法朵小酒馆 <span class="pt">A Tasca do Chico</span></span>
+        <span class="map">A Tasca do Chico</span>
+        <span class="addr">R. do Diário de Notícias 39，Bairro Alto · 走路 10 分钟 · 不收门票，点杯酒就行</span>
+        <p>这周还没听过法朵的话，今晚是最后的机会窗口（明晚 Welcome Dinner、后天婚礼）。这家是 <em>fado vadio</em>——「野生法朵」，唱的人可能是隔壁大叔，火腿吊在天花板上，墙上全是球衣和照片。<strong>20:15 前到才有位子</strong>，唱歌时全场安静是规矩。不想出门就在家躺平，明天要早起。</p>
+        <div class="tags"><span class="tag free">可去可不去</span></div>
+      </div></div>
+
+    </div>
+
+    <div class="note">
+      <p><strong>今天最重要的一件事：</strong>在 parquesdesintra.pt 买<strong>明天（9/25 周五）</strong>佩纳宫 <strong>9:30–10:00</strong> 的票，雷加莱拉也可以一起买。明天的节奏必须紧：<strong>8:15 前到 Rossio 站上车</strong> → 佩纳宫 9:30 进 → 雷加莱拉 12:30 → <strong>15:00 的火车回城</strong> → 到家洗澡换装（着装 Chic：大红大蓝越鲜艳越好）→ 打 Uber 去 Gradil 的 Welcome Dinner。明天不能睡懒觉，也别在辛特拉恋战。</p>
+    </div>
+  </section>
+
+  <footer>
+    <div>更新于 2026 年 9 月 24 日上午。</div>
+    <div>本周总览：<a href="index.html">里斯本这一周</a> · 完整 27 天：<a href="full.html">里斯本到拉各斯</a></div>
+  </footer>
+
+</div>
+</body>
+</html>
