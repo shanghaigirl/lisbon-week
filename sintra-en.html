@@ -1,0 +1,294 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="Sintra day plan, Fri Sep 25">
+<meta name="robots" content="noindex">
+<title>Sintra Today</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Karla:wght@400;500;600;700&family=Noto+Serif+SC:wght@400;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap">
+<style>*,*::before,*::after{box-sizing:border-box}body{margin:0;padding:0}img{max-width:100%}</style>
+</head>
+<body>
+<style>
+  :root {
+    --paper:    #F7F6F2;
+    --surface:  #FFFFFF;
+    --surface-2:#EFEFE9;
+    --ink:      #1B2430;
+    --ink-soft: #3E4A59;
+    --muted:    #6C7787;
+    --line:     #E1E1DA;
+    --line-soft:#ECECE5;
+    --azul:     #2A4E8F;
+    --azul-ink: #2A4E8F;
+    --azul-wash:#E6ECF7;
+    --ochre:    #96621A;
+    --ochre-wash:#F6EDDD;
+    --moss:     #3C6A4D;
+    --moss-wash:#E4EEE6;
+    --measure: 42em;
+    color-scheme: light;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --paper:    #12161C;
+      --surface:  #1A2028;
+      --surface-2:#222A34;
+      --ink:      #E9ECF1;
+      --ink-soft: #C3CAD4;
+      --muted:    #929CAA;
+      --line:     #2C3542;
+      --line-soft:#232B35;
+      --azul:     #8AB0EC;
+      --azul-ink: #A2C2F2;
+      --azul-wash:#1B2635;
+      --ochre:    #D7A85C;
+      --ochre-wash:#2B2317;
+      --moss:     #85B394;
+      --moss-wash:#1A2820;
+      color-scheme: dark;
+    }
+  }
+  :root[data-theme="dark"] {
+    --paper:    #12161C;
+    --surface:  #1A2028;
+    --surface-2:#222A34;
+    --ink:      #E9ECF1;
+    --ink-soft: #C3CAD4;
+    --muted:    #929CAA;
+    --line:     #2C3542;
+    --line-soft:#232B35;
+    --azul:     #8AB0EC;
+    --azul-ink: #A2C2F2;
+    --azul-wash:#1B2635;
+    --ochre:    #D7A85C;
+    --ochre-wash:#2B2317;
+    --moss:     #85B394;
+    --moss-wash:#1A2820;
+    color-scheme: dark;
+  }
+
+  body {
+    background: var(--paper);
+    color: var(--ink);
+    font-family: Karla, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", ui-sans-serif, system-ui, sans-serif;
+    font-size: 15.5px;
+    line-height: 1.65;
+    -webkit-font-smoothing: antialiased;
+  }
+  .wrap { max-width: 860px; margin: 0 auto; padding-inline: 20px; padding-block: 40px 72px; display: flex; flex-direction: column; gap: 44px; }
+
+  h1, h2, h3 { margin: 0; text-wrap: balance; }
+  h1 { font-family: "Instrument Serif", "Noto Serif SC", Georgia, serif; font-weight: 400; font-size: clamp(38px, 8vw, 62px); line-height: 1.05; letter-spacing: -.01em; }
+  h2 { font-family: "Instrument Serif", "Noto Serif SC", Georgia, serif; font-weight: 400; font-size: clamp(25px, 4vw, 32px); line-height: 1.15; }
+  h3 { font-size: 15px; font-weight: 700; letter-spacing: .01em; }
+  p { margin: 0; max-width: var(--measure); }
+  a { color: var(--azul-ink); }
+
+  .mono { font-family: "IBM Plex Mono", ui-monospace, monospace; font-variant-numeric: tabular-nums; }
+  .eyebrow { font-family: "IBM Plex Mono", ui-monospace, monospace; font-size: 11px; letter-spacing: .14em; text-transform: uppercase; color: var(--muted); }
+
+  header.top { display: flex; flex-direction: column; gap: 16px; }
+  header.top .route { font-size: 17px; color: var(--ink-soft); max-width: 60ch; }
+  .facts { display: flex; flex-wrap: wrap; gap: 14px 30px; border-top: 1px solid var(--line); padding-top: 16px; }
+  .fact { display: flex; flex-direction: column; gap: 2px; }
+  .fact .k { font-family: "IBM Plex Mono", monospace; font-size: 10.5px; letter-spacing: .12em; text-transform: uppercase; color: var(--muted); }
+  .fact .v { font-size: 15px; font-weight: 600; font-variant-numeric: tabular-nums; }
+
+  section { display: flex; flex-direction: column; gap: 18px; }
+  .sec-head { display: flex; flex-direction: column; gap: 5px; }
+  .sec-head p { color: var(--muted); font-size: 14.5px; }
+
+  .tw { overflow-x: auto; border: 1px solid var(--line); border-radius: 2px; background: var(--surface); }
+  table { border-collapse: collapse; width: 100%; min-width: 540px; font-size: 14px; }
+  thead th { text-align: left; padding: 10px 14px; font-family: "IBM Plex Mono", monospace; font-size: 10px; letter-spacing: .11em; text-transform: uppercase; color: var(--muted); font-weight: 500; border-bottom: 1px solid var(--line); white-space: nowrap; }
+  tbody td { padding: 11px 14px; border-bottom: 1px solid var(--line-soft); vertical-align: top; }
+  tbody tr:last-child td { border-bottom: none; }
+  td.t { font-family: "IBM Plex Mono", monospace; font-variant-numeric: tabular-nums; white-space: nowrap; }
+  td strong { font-weight: 700; }
+  .sub { color: var(--muted); font-size: 12.5px; display: block; }
+
+  /* today's stop rail */
+  .days { display: flex; flex-direction: column; }
+  .day { display: grid; grid-template-columns: 96px 1fr; gap: 0 22px; padding: 16px 0; border-top: 1px solid var(--line-soft); align-items: start; }
+  .day:first-child { border-top: 1px solid var(--line); }
+  .day .when { font-family: "IBM Plex Mono", monospace; font-variant-numeric: tabular-nums; font-size: 13px; color: var(--ink-soft); padding-top: 1px; }
+  .day .when b { display: block; font-size: 15px; font-weight: 600; color: var(--ink); }
+  .day .what { display: flex; flex-direction: column; gap: 7px; }
+  .day .what p { font-size: 14.8px; }
+  .map { font-family: "IBM Plex Mono", ui-monospace, monospace; font-size: 12.5px; color: var(--azul-ink); background: var(--azul-wash); border: 1px solid color-mix(in srgb, var(--azul) 30%, transparent); border-radius: 2px; padding: 4px 9px; display: inline-block; max-width: 100%; }
+  .addr { font-size: 12.5px; color: var(--muted); }
+  .stopname { font-size: 15.5px; font-weight: 700; }
+  .stopname .pt { font-weight: 400; color: var(--muted); font-size: 13px; }
+
+  .tags { display: flex; flex-wrap: wrap; gap: 6px; }
+  .tag { font-family: "IBM Plex Mono", monospace; font-size: 10px; letter-spacing: .07em; text-transform: uppercase; padding: 2px 7px; border-radius: 2px; border: 1px solid; white-space: nowrap; }
+  .tag.free { color: var(--moss); border-color: color-mix(in srgb, var(--moss) 45%, transparent); background: var(--moss-wash); }
+  .tag.drive { color: var(--ochre); border-color: color-mix(in srgb, var(--ochre) 45%, transparent); background: var(--ochre-wash); }
+  .tag.key { color: var(--azul); border-color: color-mix(in srgb, var(--azul) 45%, transparent); background: var(--azul-wash); }
+
+  .leg { display: flex; flex-direction: column; gap: 4px; padding: 14px 16px; background: var(--azul-wash); border-left: 3px solid var(--azul); border-radius: 2px; }
+  .leg .name { font-weight: 700; font-size: 16px; }
+  .leg .meta { font-family: "IBM Plex Mono", monospace; font-size: 12.5px; color: var(--ink-soft); }
+
+  .note { border-left: 3px solid var(--ochre); background: var(--ochre-wash); padding: 13px 16px; border-radius: 2px; display: flex; flex-direction: column; gap: 7px; }
+  .note p, .note li { font-size: 14.3px; color: var(--ink-soft); }
+  .note strong { color: var(--ink); }
+
+  ul { margin: 0; padding-left: 18px; display: flex; flex-direction: column; gap: 6px; }
+  li { font-size: 14.8px; max-width: var(--measure); }
+
+  footer { border-top: 1px solid var(--line); padding-top: 18px; color: var(--muted); font-size: 13px; display: flex; flex-direction: column; gap: 5px; }
+
+  @media (max-width: 680px) {
+    body { font-size: 16px; }
+    .wrap { padding-block: 28px 56px; gap: 36px; }
+    .tw { overflow-x: visible; border: none; background: transparent; }
+    table { min-width: 0; width: 100%; }
+    thead { display: none; }
+    tbody tr { display: flex; flex-direction: column; gap: 3px; padding: 14px 15px; background: var(--surface); border: 1px solid var(--line); border-radius: 2px; }
+    tbody tr + tr { margin-top: 10px; }
+    tbody td { display: block; padding: 0; border: none; font-size: 14.6px; }
+    tbody td:first-child { font-size: 16px; }
+    td.t { color: var(--azul-ink); font-size: 13px; font-weight: 600; order: -1; }
+    .day { grid-template-columns: 1fr; gap: 7px; padding: 16px 0; }
+    .day .when { font-size: 13px; color: var(--azul-ink); font-weight: 600; }
+    .day .when b { display: inline; font-size: 13px; color: var(--azul-ink); margin-right: 4px; }
+    .facts { gap: 12px 22px; }
+    .note, .leg { padding: 14px 15px; }
+  }
+  @media print {
+    body { background: #fff; }
+    .day, .leg, .note, .tw { break-inside: avoid; }
+  }
+</style>
+
+<div class="wrap">
+
+  <header class="top">
+    <div class="eyebrow">Ciel &amp; Michael · Fri Sep 25 · Wedding Week Day 6</div>
+    <h1>Sintra Today</h1>
+    <p class="route">The candy-coloured Pena Palace in the morning, down the Initiation Well at Regaleira at midday, and the 15:00 train back — because tonight is the Welcome Dinner and <strong>the 17:50 shuttle from Marquês de Pombal is today's hard deadline</strong>. The whole day is planned backwards from it. Paste the blue boxes into Google Maps. <a href="sintra.html">中文版</a></p>
+    <div class="facts">
+      <div class="fact"><span class="k">Departure station</span><span class="v">Rossio (NOT Cais do Sodré!)</span></div>
+      <div class="fact"><span class="k">Today's picks</span><span class="v">Pena + Regaleira only</span></div>
+      <div class="fact"><span class="k">Deadline</span><span class="v">17:50 shuttle · Marquês de Pombal</span></div>
+      <div class="fact"><span class="k">Dress</span><span class="v">Chic: bold reds &amp; blues, the brighter the better</span></div>
+    </div>
+  </header>
+
+  <section>
+    <div class="sec-head">
+      <h2>The three "castles" — how to choose</h2>
+      <p>There's time for two. Here's the trade:</p>
+    </div>
+    <div class="cols">
+      <div class="block">
+        <h3>Pena Palace — go</h3>
+        <p>The candy-red-and-yellow Romanticist fantasy on the peak, built in the 1840s by the German-born king Ferdinand II — Sintra's icon. The terraces and exterior are the point; the interior line moves slowly, skip it if pressed.</p>
+      </div>
+      <div class="block">
+        <h3>Quinta da Regaleira — go</h3>
+        <p>Not strictly a castle: a millionaire's estate laced with Masonic symbolism. The 27-metre inverted "Initiation Well" — spiral stairs to the bottom, then out through a tunnel — is the most singular experience of the three.</p>
+      </div>
+      <div class="block">
+        <h3>Moorish Castle — skip today</h3>
+        <p>The 8th-century rampart ruins on the ridge next to Pena — a "mini Great Wall" walk with views. It overlaps with Pena's terraces and adds 1.5 hours; with tonight's event, it's the cut.</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="sec-head">
+      <h2>Stop by stop</h2>
+      <p>Pena is a timed ticket — buy at parquesdesintra.pt before you leave (Regaleira sells at the door). Sintra has its own microclimate: often misty and cooler than Lisbon in the morning — bring a layer; the mist usually burns off and makes better photos.</p>
+    </div>
+
+    <div class="days">
+
+      <div class="day"><div class="when"><b>go</b>train</div><div class="what">
+        <span class="stopname">Board at Rossio</span>
+        <span class="map">Rossio Station</span>
+        <span class="addr">12-min walk or 5-min taxi · ⚠️ Today it's Rossio — not Cais do Sodré like the Cascais day · trains every 20–30 min, 40 min to the terminus</span>
+        <p>The old horseshoe-arched station is a sight in itself. Top up Viva Viagem for a return. <strong>The earlier the train, the better</strong> — Pena's crowds rise with the tour-bus arrivals; every hour earlier is pure profit.</p>
+      </div></div>
+
+      <div class="day"><div class="when"><b>arrive</b>uphill</div><div class="what">
+        <span class="stopname">Sintra station → Uber straight up to Pena</span>
+        <span class="map">Parque da Pena entrance</span>
+        <span class="addr">Uber/Bolt ~10 min, €8–10 · bus 434 also goes but its queue can run 30+ minutes</span>
+        <p>Don't hesitate — take the car. The 434 queue is Sintra's biggest hidden time sink, and the walk up is a 40-minute steep climb. Save the legs for inside the park.</p>
+      </div></div>
+
+      <div class="day"><div class="when"><b>morning</b>Pena</div><div class="what">
+        <span class="stopname">Pena Palace <span class="pt">Palácio Nacional da Pena</span></span>
+        <span class="map">Park and National Palace of Pena</span>
+        <span class="addr">10-min uphill path from the gate to the palace · timed entry · budget 1.5–2 hours</span>
+        <p>In the 1840s the artist-king Ferdinand II built this red-and-yellow fantasy over a ruined monastery — onion domes, a sea-monster portal, tiled façades; the masterpiece of European Romanticism, visible from Lisbon on a clear day. <strong>The best part is the terrace circuit around the outside</strong> — every classic photo angle is out there, with the Atlantic and the forest spread below. <strong>The interior is situational</strong>: if the line is short, go in (the royal rooms are intact, 20 minutes); if long, skip without regret.</p>
+        <div class="tags"><span class="tag key">timed ticket</span></div>
+      </div></div>
+
+      <div class="day"><div class="when"><b>12:00</b>downhill</div><div class="what">
+        <span class="stopname">Uber down to Regaleira</span>
+        <span class="map">Quinta da Regaleira</span>
+        <span class="addr">10 min by car · or grab a quick bite in the old town first (10-min walk from the centre)</span>
+        <p>Keep lunch light today: a quick tasca in town, or do Regaleira first and have a pastry after — the real meal is tonight's Welcome Dinner.</p>
+      </div></div>
+
+      <div class="day"><div class="when"><b>12:30<br>–14:15</b>estate</div><div class="what">
+        <span class="stopname">Quinta da Regaleira</span>
+        <span class="map">Quinta da Regaleira</span>
+        <span class="addr">R. Barbosa du Bocage · tickets at the door · budget 1.5 hours</span>
+        <p>Around 1900, the Brazilian coffee magnate nicknamed "Monteiro the Millionaire" built alchemy, Templar and Masonic symbolism into every corner of this estate. <strong>Go straight to the Initiation Well (Poço Iniciático)</strong>: a 27-metre inverted tower — nine spiral levels down (Dante's nine circles), then out through a dark tunnel that exits at a waterfall pool. It really was an initiation route. The well queue can hit 20 minutes when busy, so do it first, then the gardens and the house.</p>
+        <div class="tags"><span class="tag key">well first</span></div>
+      </div></div>
+
+      <div class="day"><div class="when"><b>14:20</b>pastry</div><div class="what">
+        <span class="stopname">A travesseiro at Piriquita</span>
+        <span class="map">Piriquita Sintra</span>
+        <span class="addr">R. das Padarias 1, old town · 10-min walk back from Regaleira</span>
+        <p>A bakery running since 1862; the signature <em>travesseiro</em> ("pillow") is a sugared puff-pastry roll with almond-egg cream, best warm. Two to go — eat them on the walk to the taxi.</p>
+      </div></div>
+
+      <div class="day"><div class="when"><b>15:00</b>return</div><div class="what">
+        <span class="stopname">Train back to Rossio</span>
+        <span class="addr">5-min taxi to Sintra station · <strong>the 15:15 train is the absolute latest</strong> · home before 16:00</span>
+        <p>Home, shower, change: <strong>Chic — bold reds and blues, the brighter the better</strong>. Don't dawdle; leave slack for surprises.</p>
+        <div class="tags"><span class="tag key">countdown starts</span></div>
+      </div></div>
+
+      <div class="day"><div class="when"><b>17:35</b>shuttle</div><div class="what">
+        <span class="stopname">Welcome Dinner shuttle · Marquês de Pombal</span>
+        <span class="map">Marques de Pombal Lisboa</span>
+        <span class="addr">8-min taxi from the flat (or one metro stop from Rato) · <strong>shuttle departs 17:50 — the hosts say "Please be early", so be there 17:35</strong></span>
+        <p>The couple has reserved shuttles straight to the estate — no need for your own ride to Gradil. The return shuttle <strong>leaves the venue at 23:00</strong> for Lisbon; miss it and it's a 40-minute cross-country Uber, so drift toward the bus by 22:45.</p>
+        <div class="tags"><span class="tag key">departs 17:50</span></div>
+      </div></div>
+
+      <div class="day"><div class="when"><b>19:00</b>dinner</div><div class="what">
+        <span class="stopname">Welcome Dinner · Quinta de Sant'Ana, "Pinhal Tent"</span>
+        <span class="map">Quinta de Sant'Ana Gradil</span>
+        <span class="addr">A family wine estate in Gradil · the tent in the pine grove (pinhal = pine wood) · starts 19:00</span>
+        <p>A 300-year-old family estate whose own white wines are the local calling card. "Good food and better people" — eat and drink freely tonight; the shuttle means nobody's driving.</p>
+        <div class="tags"><span class="tag key">wedding event</span><span class="tag free">both can drink</span></div>
+      </div></div>
+
+    </div>
+
+    <div class="note">
+      <p><strong>If the morning runs late:</strong> keep Regaleira and drop Pena's palace (do the park + exterior only, or skip entirely) — Regaleira is closer to town, doesn't hinge on a timed slot, and is the more singular experience. Whatever happens, <strong>the 15:15 train and being at Marquês de Pombal by 17:35 don't move</strong>.</p>
+      <p><strong>Tomorrow is the wedding day:</strong> the shuttle gets you back at 23:00 — pace the wine. Tomorrow's dress code is Formal (earth tones), and the ceremony includes the Persian Sofreh Aghd; timing per the invitation.</p>
+    </div>
+  </section>
+
+  <footer>
+    <div>Updated Friday morning, Sep 25, 2026.</div>
+    <div>The week: <a href="en.html">This Week in Lisbon</a> · Full 27 days: <a href="full.html">里斯本到拉各斯</a></div>
+  </footer>
+
+</div>
+</body>
+</html>
