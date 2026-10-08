@@ -1,0 +1,272 @@
+<!doctype html>
+<html lang="zh">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="拉各斯最后一周 10/9–10/16">
+<meta name="robots" content="noindex">
+<title>拉各斯最后一周</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Karla:wght@400;500;600;700&family=Noto+Serif+SC:wght@400;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap">
+<style>*,*::before,*::after{box-sizing:border-box}body{margin:0;padding:0}img{max-width:100%}</style>
+</head>
+<body>
+<style>
+  :root {
+    --paper:    #F7F6F2;
+    --surface:  #FFFFFF;
+    --surface-2:#EFEFE9;
+    --ink:      #1B2430;
+    --ink-soft: #3E4A59;
+    --muted:    #6C7787;
+    --line:     #E1E1DA;
+    --line-soft:#ECECE5;
+    --azul:     #2A4E8F;
+    --azul-ink: #2A4E8F;
+    --azul-wash:#E6ECF7;
+    --ochre:    #96621A;
+    --ochre-wash:#F6EDDD;
+    --moss:     #3C6A4D;
+    --moss-wash:#E4EEE6;
+    --measure: 42em;
+    color-scheme: light;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --paper:    #12161C;
+      --surface:  #1A2028;
+      --surface-2:#222A34;
+      --ink:      #E9ECF1;
+      --ink-soft: #C3CAD4;
+      --muted:    #929CAA;
+      --line:     #2C3542;
+      --line-soft:#232B35;
+      --azul:     #8AB0EC;
+      --azul-ink: #A2C2F2;
+      --azul-wash:#1B2635;
+      --ochre:    #D7A85C;
+      --ochre-wash:#2B2317;
+      --moss:     #85B394;
+      --moss-wash:#1A2820;
+      color-scheme: dark;
+    }
+  }
+  :root[data-theme="dark"] {
+    --paper:    #12161C;
+    --surface:  #1A2028;
+    --surface-2:#222A34;
+    --ink:      #E9ECF1;
+    --ink-soft: #C3CAD4;
+    --muted:    #929CAA;
+    --line:     #2C3542;
+    --line-soft:#232B35;
+    --azul:     #8AB0EC;
+    --azul-ink: #A2C2F2;
+    --azul-wash:#1B2635;
+    --ochre:    #D7A85C;
+    --ochre-wash:#2B2317;
+    --moss:     #85B394;
+    --moss-wash:#1A2820;
+    color-scheme: dark;
+  }
+
+  body {
+    background: var(--paper);
+    color: var(--ink);
+    font-family: Karla, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", ui-sans-serif, system-ui, sans-serif;
+    font-size: 15.5px;
+    line-height: 1.65;
+    -webkit-font-smoothing: antialiased;
+  }
+  .wrap { max-width: 860px; margin: 0 auto; padding-inline: 20px; padding-block: 40px 72px; display: flex; flex-direction: column; gap: 44px; }
+
+  h1, h2, h3 { margin: 0; text-wrap: balance; }
+  h1 { font-family: "Instrument Serif", "Noto Serif SC", Georgia, serif; font-weight: 400; font-size: clamp(38px, 8vw, 62px); line-height: 1.05; letter-spacing: -.01em; }
+  h2 { font-family: "Instrument Serif", "Noto Serif SC", Georgia, serif; font-weight: 400; font-size: clamp(25px, 4vw, 32px); line-height: 1.15; }
+  h3 { font-size: 15px; font-weight: 700; letter-spacing: .01em; }
+  p { margin: 0; max-width: var(--measure); }
+  a { color: var(--azul-ink); }
+
+  .mono { font-family: "IBM Plex Mono", ui-monospace, monospace; font-variant-numeric: tabular-nums; }
+  .eyebrow { font-family: "IBM Plex Mono", ui-monospace, monospace; font-size: 11px; letter-spacing: .14em; text-transform: uppercase; color: var(--muted); }
+
+  header.top { display: flex; flex-direction: column; gap: 16px; }
+  header.top .route { font-size: 17px; color: var(--ink-soft); max-width: 60ch; }
+  .facts { display: flex; flex-wrap: wrap; gap: 14px 30px; border-top: 1px solid var(--line); padding-top: 16px; }
+  .fact { display: flex; flex-direction: column; gap: 2px; }
+  .fact .k { font-family: "IBM Plex Mono", monospace; font-size: 10.5px; letter-spacing: .12em; text-transform: uppercase; color: var(--muted); }
+  .fact .v { font-size: 15px; font-weight: 600; font-variant-numeric: tabular-nums; }
+
+  section { display: flex; flex-direction: column; gap: 18px; }
+  .sec-head { display: flex; flex-direction: column; gap: 5px; }
+  .sec-head p { color: var(--muted); font-size: 14.5px; }
+
+  .tw { overflow-x: auto; border: 1px solid var(--line); border-radius: 2px; background: var(--surface); }
+  table { border-collapse: collapse; width: 100%; min-width: 540px; font-size: 14px; }
+  thead th { text-align: left; padding: 10px 14px; font-family: "IBM Plex Mono", monospace; font-size: 10px; letter-spacing: .11em; text-transform: uppercase; color: var(--muted); font-weight: 500; border-bottom: 1px solid var(--line); white-space: nowrap; }
+  tbody td { padding: 11px 14px; border-bottom: 1px solid var(--line-soft); vertical-align: top; }
+  tbody tr:last-child td { border-bottom: none; }
+  td.t { font-family: "IBM Plex Mono", monospace; font-variant-numeric: tabular-nums; white-space: nowrap; }
+  td strong { font-weight: 700; }
+  .sub { color: var(--muted); font-size: 12.5px; display: block; }
+
+  /* today's stop rail */
+  .days { display: flex; flex-direction: column; }
+  .day { display: grid; grid-template-columns: 96px 1fr; gap: 0 22px; padding: 16px 0; border-top: 1px solid var(--line-soft); align-items: start; }
+  .day:first-child { border-top: 1px solid var(--line); }
+  .day .when { font-family: "IBM Plex Mono", monospace; font-variant-numeric: tabular-nums; font-size: 13px; color: var(--ink-soft); padding-top: 1px; }
+  .day .when b { display: block; font-size: 15px; font-weight: 600; color: var(--ink); }
+  .day .what { display: flex; flex-direction: column; gap: 7px; }
+  .day .what p { font-size: 14.8px; }
+  .map { font-family: "IBM Plex Mono", ui-monospace, monospace; font-size: 12.5px; color: var(--azul-ink); background: var(--azul-wash); border: 1px solid color-mix(in srgb, var(--azul) 30%, transparent); border-radius: 2px; padding: 4px 9px; display: inline-block; max-width: 100%; }
+  .addr { font-size: 12.5px; color: var(--muted); }
+  .stopname { font-size: 15.5px; font-weight: 700; }
+  .stopname .pt { font-weight: 400; color: var(--muted); font-size: 13px; }
+
+  .tags { display: flex; flex-wrap: wrap; gap: 6px; }
+  .tag { font-family: "IBM Plex Mono", monospace; font-size: 10px; letter-spacing: .07em; text-transform: uppercase; padding: 2px 7px; border-radius: 2px; border: 1px solid; white-space: nowrap; }
+  .tag.free { color: var(--moss); border-color: color-mix(in srgb, var(--moss) 45%, transparent); background: var(--moss-wash); }
+  .tag.drive { color: var(--ochre); border-color: color-mix(in srgb, var(--ochre) 45%, transparent); background: var(--ochre-wash); }
+  .tag.key { color: var(--azul); border-color: color-mix(in srgb, var(--azul) 45%, transparent); background: var(--azul-wash); }
+
+  .leg { display: flex; flex-direction: column; gap: 4px; padding: 14px 16px; background: var(--azul-wash); border-left: 3px solid var(--azul); border-radius: 2px; }
+  .leg .name { font-weight: 700; font-size: 16px; }
+  .leg .meta { font-family: "IBM Plex Mono", monospace; font-size: 12.5px; color: var(--ink-soft); }
+
+  .note { border-left: 3px solid var(--ochre); background: var(--ochre-wash); padding: 13px 16px; border-radius: 2px; display: flex; flex-direction: column; gap: 7px; }
+  .note p, .note li { font-size: 14.3px; color: var(--ink-soft); }
+  .note strong { color: var(--ink); }
+
+  ul { margin: 0; padding-left: 18px; display: flex; flex-direction: column; gap: 6px; }
+  li { font-size: 14.8px; max-width: var(--measure); }
+
+  footer { border-top: 1px solid var(--line); padding-top: 18px; color: var(--muted); font-size: 13px; display: flex; flex-direction: column; gap: 5px; }
+
+  @media (max-width: 680px) {
+    body { font-size: 16px; }
+    .wrap { padding-block: 28px 56px; gap: 36px; }
+    .tw { overflow-x: visible; border: none; background: transparent; }
+    table { min-width: 0; width: 100%; }
+    thead { display: none; }
+    tbody tr { display: flex; flex-direction: column; gap: 3px; padding: 14px 15px; background: var(--surface); border: 1px solid var(--line); border-radius: 2px; }
+    tbody tr + tr { margin-top: 10px; }
+    tbody td { display: block; padding: 0; border: none; font-size: 14.6px; }
+    tbody td:first-child { font-size: 16px; }
+    td.t { color: var(--azul-ink); font-size: 13px; font-weight: 600; order: -1; }
+    .day { grid-template-columns: 1fr; gap: 7px; padding: 16px 0; }
+    .day .when { font-size: 13px; color: var(--azul-ink); font-weight: 600; }
+    .day .when b { display: inline; font-size: 13px; color: var(--azul-ink); margin-right: 4px; }
+    .facts { gap: 12px 22px; }
+    .note, .leg { padding: 14px 15px; }
+  }
+  @media print {
+    body { background: #fff; }
+    .day, .leg, .note, .tw { break-inside: avoid; }
+  }
+</style>
+
+<div class="wrap">
+
+  <header class="top">
+    <div class="eyebrow">Ciel &amp; Michael · 10/9 – 10/16 · 拉各斯收官</div>
+    <h1>拉各斯最后一周</h1>
+    <p class="route">原则：工作日只做走路能到的，远途全放长周末。周六东线（Benagil + 陶艺小镇 + piri piri 烤鸡），周日西线（Sagres + 圣文森角日落），周一感恩节彻底躺平不开车。明天的 kayak 已订（10:15 开始）；<strong>10/15 回里斯本的火车票还没订，这是当前头号待办</strong>。蓝色框直接贴进 Google Maps。<a href="lagos-week-en.html">English version</a></p>
+    <div class="facts">
+      <div class="fact"><span class="k">已订</span><span class="v">周五 kayak 10:15 ✓</span></div>
+      <div class="fact"><span class="k">待订</span><span class="v">10/15 火车票（cp.pt，订早班）</span></div>
+      <div class="fact"><span class="k">租车</span><span class="v">10/14 周三 13:30 前还</span></div>
+      <div class="fact"><span class="k">开车日</span><span class="v">只有周六和周日</span></div>
+      <div class="fact"><span class="k">十月中日落</span><span class="v">约 18:55</span></div>
+    </div>
+  </header>
+
+  <section>
+    <div class="sec-head">
+      <h2>逐日安排</h2>
+      <p>周六周日 Michael 开车不能喝，酒都留给周一——他放假、不开车、随便喝。</p>
+    </div>
+
+    <div class="days">
+
+      <div class="day"><div class="when"><b>10/9 五</b>kayak</div><div class="what">
+        <span class="stopname">Kayak 钻 Ponta da Piedade 海蚀洞（已订 · 10:15 开始）</span>
+        <span class="map">Ponta da Piedade</span>
+        <span class="addr">集合点以订单为准（一般在码头或 Batata 海滩一带）· <strong>9:45 前到</strong> · 约 2 小时</span>
+        <p>自己划着钻金色石柱间的洞和拱门，中途一般会停一个只有船能到的小沙滩。带泳衣、能下水的鞋、防水袋/手机防水套，防晒抹够。12:30 前后结束，走回家，Michael 赶 14:00 上班没问题。</p>
+        <div class="tags"><span class="tag key">已预订</span><span class="tag work">14:00 上班</span></div>
+      </div></div>
+
+      <div class="day"><div class="when"><b>10/10 六</b>东线</div><div class="what">
+        <span class="stopname">Benagil 天窗洞 + 七悬谷步道 + 陶艺小镇 + Ramires 烤鸡</span>
+        <span class="map">Praia da Marinha</span>
+        <span class="addr">开车 45 分钟到 Marinha 停车场 · 回程顺路 Porches 和 Guia</span>
+        <p><strong>上午：</strong>车停 Praia da Marinha，沿<strong>七悬谷步道</strong>往 Benagil 方向走一段（单程 40 分钟，全葡萄牙最美的一段海岸步道），走到 <strong>Benagil 洞顶的天窗</strong>往下看——阳光从穹顶的洞照进洞底沙滩。想进洞里，去 Benagil 海滩现场坐 30–40 分钟的小船（十几欧，上午人少）。<strong>中午起回程两连停：</strong>① <strong>Porches Pottery</strong>（EN125 国道边，1968 年的老工坊，画工现场手绘，大件可寄加拿大）② Guia 的 <strong>Ramires</strong>（1964 年、自称 piri piri 烤鸡发源店）——九月在里斯本吃的 Bonjardim，今天对比朝圣版。下午开回家，结束。</p>
+        <div class="tags"><span class="tag free">自由日</span><span class="tag drive">开车日 · Michael 不能喝</span></div>
+      </div></div>
+
+      <div class="day"><div class="when"><b>10/11 日</b>西线</div><div class="what">
+        <span class="stopname">Sagres 要塞 + 沙滩下午 + 圣文森角日落</span>
+        <span class="map">Fortaleza de Sagres</span>
+        <span class="addr">开车 35–40 分钟 · 圣文森角搜 Cabo de Sao Vicente，再 10 分钟</span>
+        <p><strong>中午才出门就行，上午睡觉。</strong>先逛 <strong>Sagres 要塞</strong>——孤零零立在海岬上，恩里克王子当年的航海学校传说就在这。下午在 <strong>Praia do Tonel 或 Mareta</strong> 沙滩上泡着看冲浪（朋友说的 sunset on the beach 就是这种沙滩）。傍晚挪到<strong>圣文森角</strong>：140 米悬崖 + 灯塔，欧洲大陆的西南角，大航海时代的「世界尽头」，<strong>18:55 前后日落</strong>，太阳直接沉进大西洋。天黑开 40 分钟回。<strong>风大且冷，外套必带。</strong>还有体力的话上午可以加 Bordeira 悬崖环线，没有就算了。</p>
+        <div class="tags"><span class="tag free">自由日</span><span class="tag drive">开车日 · 不能喝</span><span class="tag key">日落</span></div>
+      </div></div>
+
+      <div class="day"><div class="when"><b>10/12 一</b>感恩节</div><div class="what">
+        <span class="stopname">彻底躺平日 · 全程不开车</span>
+        <span class="map">Praia do Camilo</span>
+        <span class="addr">全部走路 · 车钥匙一整天不碰</span>
+        <p>睡到自然醒，上午 <strong>Camilo 或 Dona Ana</strong> 沙滩躺着，中午老城吃 <strong>cataplana</strong>（铜锅焖海鲜，这顿是感恩节正餐，配一瓶白的），下午继续躺或者睡午觉，<strong>18:30 走去 Ponta da Piedade 看日落</strong>——整片金色岩壁被烧成橙红色。Michael 放假 + 不开车 = 想喝多少喝多少。连跑两天车，这天是故意空出来的，别手痒加东西。</p>
+        <div class="tags"><span class="tag free">感恩节 · 都能喝</span><span class="tag key">日落</span></div>
+      </div></div>
+
+      <div class="day"><div class="when"><b>10/13 二</b>缓冲</div><div class="what">
+        <span class="stopname">休息上午 · 想动就补 Silves</span>
+        <span class="map">Castelo de Silves</span>
+        <span class="addr">想去的话开 40 分钟 · 13:30 前回 · 不去就 Dona Ana 躺着</span>
+        <p>默认就是歇。还惦记 <strong>Silves</strong>（摩尔人的红砂岩城堡、阿尔加维的旧都）就用这个上午补掉，城堡 + 老城两小时够；不惦记就家门口沙滩。</p>
+        <div class="tags"><span class="tag work">14:00 上班</span></div>
+      </div></div>
+
+      <div class="day"><div class="when"><b>10/14 三</b>还车</div><div class="what">
+        <span class="stopname">三个小渔村 + 13:30 前还车</span>
+        <span class="map">Praia da Luz</span>
+        <span class="addr">Luz 开车 15 分钟 · Burgau、Salema 再往西各 10 分钟 · 还车点按合同</span>
+        <p>租车的最后一个上午：开去 <strong>Praia da Luz</strong>，再到 <strong>Burgau</strong>（白墙渔村挤在海湾里）和 <strong>Salema</strong>（海鲜午饭就在这吃，渔船就停在沙滩上）。<strong>13:30 前回拉各斯还车</strong>，之后就无车一身轻。</p>
+        <div class="tags"><span class="tag drive">还车日</span><span class="tag work">14:00 上班</span></div>
+      </div></div>
+
+      <div class="day"><div class="when"><b>10/15 四</b>火车</div><div class="what">
+        <span class="stopname">回里斯本（<strong>火车票还没订——现在就订</strong>）</span>
+        <span class="map">Lagos Train Station</span>
+        <span class="addr">cp.pt 购票，终点选 Lisboa - Entrecampos · Tunes 换乘 Intercidades · <strong>Entrecampos 下车</strong>，别坐到 Oriente</span>
+        <p>全程约 4 小时。<strong>尽量订早班（8 点前后发车），中午就能到</strong>——Michael 14:00 上班就不受影响；订晚了的话他的上班时间会落在火车上（有插座、wifi 不稳，得开热点）。退房 → Bolt 去火车站 → 到 Entrecampos 打车 5 分钟到 <strong>Hotel White Lisboa</strong>（Saldanha 对面），房间没好先存行李。</p>
+        <div class="tags"><span class="tag key">火车票待订</span></div>
+      </div></div>
+
+      <div class="day"><div class="when"><b>10/16 五</b>回家</div><div class="what">
+        <span class="stopname">TS481 回多伦多 · 11:35 起飞</span>
+        <span class="map">Saldanha Metro Station</span>
+        <span class="addr">08:15 从酒店出发 · 酒店对面 Saldanha 站坐红线直达机场 20–25 分钟 · 终点就是 1 号航站楼</span>
+        <p>09:00 前到机场。周五早高峰打车不可控，地铁时间最稳。27 天收官，波士顿背回去的除了晒痕还有一箱 Porches 的陶器。</p>
+        <div class="tags"><span class="tag free">PTO</span></div>
+      </div></div>
+
+    </div>
+
+    <div class="note">
+      <p><strong>周六的小船：</strong>想进 Benagil 洞内，最稳的做法是头天晚上在 GetYourGuide/Viator 订个上午场的 Benagil 海滩小船（30–40 分钟那种）；不订现场买也行，早去。从步道天窗俯视不花钱，也已经很震撼。</p>
+      <p><strong>周日带外套：</strong>Sagres 和圣文森角风又大又冷，日落后体感掉得很快。沙滩是看的，游泳留在拉各斯这边。</p>
+      <p><strong>陶器托运：</strong>Porches 买的大件让店里寄；小件手提——记得 10/16 是 Air Transat，行李额比 Ryanair 宽松，问题不大。</p>
+    </div>
+  </section>
+
+  <footer>
+    <div>更新于 2026 年 10 月 8 日。kayak 已预订；<strong>10/15 火车票和周六 Benagil 小船还要订</strong>，其余无需预订。</div>
+    <div>完整 27 天：<a href="full.html">里斯本到拉各斯</a></div>
+  </footer>
+
+</div>
+</body>
+</html>
